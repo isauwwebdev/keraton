@@ -8,10 +8,34 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        yellow: "#FEFDEA",
+        red: "#861501",
+        startBorder: "B58301",
+        endBorder: "FEFDEA"
+        // You can add more custom colors here
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      fontFamily: {
+        sans: [
+          "League Spartan",
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          '"Segoe UI"',
+          "Roboto",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+        ],
       },
     },
   },
