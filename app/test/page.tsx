@@ -1,12 +1,17 @@
 "use client";
-import Vendors from "./vendors";
+import EmblaCarousel from "./EmblaCarousel";
+import { EmblaOptionsType } from 'embla-carousel'
 
-export const VendorPage = () => {
+const OPTIONS: EmblaOptionsType = {}
+const SLIDE_COUNT = 5
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+
+const VendorPage = () => {
   // Your Keraton page content goes here
   return (
-    <main className="flex min-h-screen ">
-      <Vendors />
-    </main>
+    <section>
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+    </section>
   );
 };
 
