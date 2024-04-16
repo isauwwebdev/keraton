@@ -1,0 +1,4 @@
+button:focus {
+  outline: none;
+  background-color: #f1c40f !important; /* Overrides other styles */
+}

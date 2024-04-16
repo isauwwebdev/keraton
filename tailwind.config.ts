@@ -23,6 +23,7 @@ const config: Config = {
       fontFamily: {
         sans: [
           "League Spartan",
+          "sans-serif",
           "ui-sans-serif",
           "system-ui",
           "-apple-system",

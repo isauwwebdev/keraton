@@ -4,23 +4,63 @@ import Image from "next/image";
 export default function Performers() {
   return (
     <div className="bg-red max-h-max">
-      <div className="content-center text-center justify-center items-center mx-auto">
-        <div className="rounded-lg content-center text-yellow text-center border-4 p-2 w-64">
-          OUR PERFORMERS
+      <div className="content-center w-5/6 justify-center items-center mx-auto">
+        <div className="bg-gradient-to-r from-orange-500 to-yellow text-white font-semibold rounded-lg p-1 mt-20">
+          <span className="flex w-full bg-red text-orange-200 rounded p-2 font-sans text-center mx-auto justify-center text-2xl">
+            OUR PERFORMERS
+          </span>
         </div>
-        {/* <Image
-        src="charlieBurg"
-        alt="Picture of charlie burg"
-        width={100}
-        height={100}
-      /> */}
-        <h1 className="text-center text-lg font-sans text-yellow m-12">
-          Charlie Burg
-        </h1>
-
-        <p className="text-center font-sans text-yellow m-12">
-          Audrey, 5th Harmony
-        </p>
+        <div className="content-center justify-center items-center mx-auto mt-20">
+          <Image
+            src="/images/careerFair.png"
+            width={200}
+            height={200}
+            alt="RANDOM"
+            className="justify-center items-center mx-auto"
+          />
+          <h1 className="text-center font-sans">LYN LAPID</h1>
+        </div>
+      </div>
+      {/* first row performers*/}
+      <div className="flex content-center mx-16 mt-2">
+        <div className="flex-1 mx-auto  my-auto content-center">
+          <h5 className="font-sans text-white font-bold text-center mx-auto">
+            WEST OF EDEN
+          </h5>
+        </div>
+        <div className="flex-initial mx-auto my-auto">
+          <h5 className="font-sans text-white font-bold text-center w-16">
+            A2V
+          </h5>
+        </div>
+        <div className="flex-1 mx-auto my-auto content-center">
+          <h5 className="font-sans text-white font-bold text-center">
+            VANESSA BELLA
+          </h5>
+        </div>
+        <div className="flex-initial mx-auto my-auto content-center">
+          <h5 className="font-sans text-white font-bold text-center">
+            PERMIAS BAND
+          </h5>
+        </div>
+      </div>
+      {/* second row performers */}
+      <div className="flex content-center mx-40 mt-8">
+        <div className="flex-1 mx-auto">
+          <h5 className="font-sans text-center text-white font-bold my-auto mx-auto">
+            SOPHOMORES
+          </h5>
+        </div>
+        <div className="flex-1 mx-auto">
+          <h5 className="font-sans text-center text-white font-bold my-auto mx-auto">
+            FAITH & JEREMY
+          </h5>
+        </div>
+        <div className="flex-1 mx-auto">
+          <h5 className="font-sans text-center text-white font-bold my-auto mx-auto">
+            AUDREY YIP
+          </h5>
+        </div>
       </div>
     </div>
   );
