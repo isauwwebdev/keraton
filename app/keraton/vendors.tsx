@@ -1,75 +1,52 @@
 "use client";
+
 import Image from "next/image";
 import React, { useEffect } from "react";
+import Carousel from "../components/carousel/VendorCarousel";
 
 const SLIDE_COUNT = 5;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
+const content = ["1", "2", "3"];
+
+const imgs = [
+  "/images/keraton2.png",
+  "/images/charlieburg.png",
+  "/images/careerFair.png",
+];
+
 export default function Vendors() {
-  useEffect(() => {
-    // Load Materialize CSS
-    const link = document.createElement("link");
-    link.href =
-      "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
-    link.rel = "stylesheet";
-    document.head.appendChild(link);
-
-    // Load Materialize JavaScript
-    const script = document.createElement("script");
-    script.src =
-      "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Initialize Materialize components like carousel when the script is loaded
-    script.onload = () => {
-      if (window.M) {
-        const elems = document.querySelectorAll(".carousel");
-        const options = {
-          shift: 150,
-          dist: -100,
-          padding: 20,
-          numVisible: 5,
-        }; // Specify any options here
-        window.M.Carousel.init(elems, options);
-      }
-    };
-
-    // Cleanup to remove script and link when component unmounts
-    return () => {
-      document.head.removeChild(link);
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
-    <div
-      className="max-w-full justify-center mx-auto"
-      style={{ margin: 0, padding: 0 }}
-    >
-      <div className="bg-red pt-8">
-        {/* Start of White BG  */}
-        <div className="bg-yellow pt-2">
-          <div className="carousel carousel-slider center">
-            <div className="carousel-item bg-red text-white">
-              <h2>First Panel</h2>
-              <p>This is your first panel</p>
-            </div>
-            <div className="carousel-item bg-red text-white">
-              <h2>Second Panel</h2>
-              <p>This is your second panel</p>
-            </div>
-            <div className="carousel-item bg-red text-white">
-              <h2>Third Panel</h2>
-              <p>This is your third panel</p>
-            </div>
-            <div className="carousel-item bg-red text-white">
-              <h2>Fourth Panel</h2>
-              <p>This is your fourth panel</p>
-            </div>
+    <div className="bg-yellow mx-auto justify-center pb-8">
+      <div className="flex flex-col md:px-32 px-8 pt-8">
+        <div className="bg-gradient-to-r from-orange-500 to-yellow text-white font-semibold rounded-lg p-1">
+          <span className="flex w-full bg-yellow text-red rounded p-3 font-sans text-center mx-auto justify-center text-2xl">
+            VENDORS
+          </span>
+        </div>
+
+        <div className="lg:w-full mx-auto my-2">
+          <div className="flex flex-col justify-center">
+            <Carousel content={content} imgs={imgs} loop />
+            <Carousel content={content} imgs={imgs} loop />
           </div>
         </div>
       </div>
     </div>
   );
+
+  /* {images.map((src, i) => {
+              return (
+                // 👇 style each individual slide.
+                // relative - needed since we use the fill prop from next/image component
+                // h-64 - arbitrary height
+                // flex[0_0_100%]
+                //   - shorthand for flex-grow:0; flex-shrink:0; flex-basis:100%
+                //   - we want this slide to not be able to grow or shrink and take up 100% width of the viewport.
+                // <div className="relative h-64 flex-[0_0_100%]" key={i}>
+                //   {/* use object-cover + fill since we don't know the height and width of the parent */
+  //   <Image src={src} fill className="object-cover" alt="alt" />
+  // </div>
+
+  // <div className="bg-red h-64 flex-[0_0_100%]" key={i}></div>*/ */}
 }

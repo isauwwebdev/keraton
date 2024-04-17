@@ -1,77 +1,56 @@
 "use client";
+// components/Carousel.tsx
+// import the hook and options type
+import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
+import { useState, useEffect } from "react";
+import VendorImage from "./VendorImage";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import Dots from "./Dots";
+import React from "react";
 
-const SLIDE_COUNT = 5;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+// Define the props
+type Props = any & EmblaOptionsType;
 
-export default function VendorCarousel(props: any) {
+const Carousel = ({ content, imgs, ...options }: Props) => {
+  // 1. useEmblaCarousel returns a emblaRef and we must attach the ref to a container.
+  // EmblaCarousel will use that ref as basis for swipe and other functionality.
+  const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
   useEffect(() => {
-    // Load Materialize CSS
-    const link = document.createElement("link");
-    link.href =
-      "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
-    link.rel = "stylesheet";
-    document.head.appendChild(link);
+    function selectHandler() {
+      // selectedScrollSnap gives us the current selected index.
+      const index = emblaApi?.selectedScrollSnap();
+      setSelectedIndex(index || 0);
+    }
 
-    // Load Materialize JavaScript
-    const script = document.createElement("script");
-    script.src =
-      "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Initialize Materialize components like carousel when the script is loaded
-    script.onload = () => {
-      if (window.M) {
-        const elems = document.querySelectorAll(".carousel");
-        const options = {
-          shift: 150,
-          dist: -100,
-          padding: 20,
-          numVisible: 5,
-        }; // Specify any options here
-        window.M.Carousel.init(elems, options);
-      }
-    };
-
-    // Cleanup to remove script and link when component unmounts
+    emblaApi?.on("select", selectHandler);
+    // cleanup
     return () => {
-      document.head.removeChild(link);
-      document.body.removeChild(script);
+      emblaApi?.off("select", selectHandler);
     };
-  }, []);
+  }, [emblaApi]);
 
-  const { slides } = props;
+  const length = content.length;
 
   return (
-    <div
-      className="max-w-full justify-center mx-auto"
-      style={{ margin: 0, padding: 0 }}
-    >
-      <div className="bg-red pt-8">
-        {/* Start of White BG  */}
-        <div className="bg-yellow pt-2">
-          <div className="carousel carousel-slider center">
-            <div className="carousel-item bg-red text-white">
-              <h2>First Panel</h2>
-              <p>This is your first panel</p>
-            </div>
-            <div className="carousel-item bg-red text-white">
-              <h2>Second Panel</h2>
-              <p>This is your second panel</p>
-            </div>
-            <div className="carousel-item bg-red text-white">
-              <h2>Third Panel</h2>
-              <p>This is your third panel</p>
-            </div>
-            <div className="carousel-item bg-red text-white">
-              <h2>Fourth Panel</h2>
-              <p>This is your fourth panel</p>
-            </div>
+    <div className="relative">
+      <VendorImage imgs={imgs} selectedIndex={selectedIndex} />
+      <div className="bg-red w-1/2 relative z-10">
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div className="flex">
+            {content.map((item: any, i: number) => {
+              return (
+                <div className="bg-red h-64 flex-[0_0_100%]" key={i}>
+                  {item}
+                </div>
+              );
+            })}
           </div>
         </div>
+        <Dots itemsLength={length} selectedIndex={selectedIndex} />
       </div>
     </div>
   );
-}
+};
+export default Carousel;

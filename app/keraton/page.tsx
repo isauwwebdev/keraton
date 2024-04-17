@@ -1,7 +1,7 @@
 import FAQ from "./faq";
 import Performers from "./performers";
 import About from "./about";
-// import Vendors from "./vendors";
+import Vendors from "./vendors";
 import Footer from "./footer";
 // import Accordion from "./accordion";
 
@@ -13,7 +13,7 @@ export const KeratonContent = () => {
       <Performers />
       <FAQ />
       {/* <Accordion /> */}
-
+      <Vendors />
       <Footer />
     </div>
   );
