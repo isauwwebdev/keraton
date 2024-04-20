@@ -26,9 +26,10 @@ export default function Vendors() {
         </div>
 
         <div className="lg:w-full mx-auto my-2">
-          <div className="flex flex-col justify-center">
-            <Carousel content={content} imgs={imgs} loop />
-            <Carousel content={content} imgs={imgs} loop />
+          <div className="flex flex-col justify-center items-center">
+            <Carousel right={true} content={content} imgs={imgs} loop />
+            <Carousel right={false} content={content} imgs={imgs} loop />
+            <Carousel right={true} content={content} imgs={imgs} loop />
           </div>
         </div>
       </div>

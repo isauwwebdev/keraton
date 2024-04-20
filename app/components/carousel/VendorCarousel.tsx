@@ -11,7 +11,7 @@ import React from "react";
 // Define the props
 type Props = any & EmblaOptionsType;
 
-const Carousel = ({ content, imgs, ...options }: Props) => {
+const Carousel = ({ right, content, imgs, ...options }: Props) => {
   // 1. useEmblaCarousel returns a emblaRef and we must attach the ref to a container.
   // EmblaCarousel will use that ref as basis for swipe and other functionality.
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
@@ -34,9 +34,9 @@ const Carousel = ({ content, imgs, ...options }: Props) => {
   const length = content.length;
 
   return (
-    <div className="relative">
-      <VendorImage imgs={imgs} selectedIndex={selectedIndex} />
-      <div className="bg-red w-1/2 relative z-10">
+    <div className="relative w-full">
+      <VendorImage right={right} imgs={imgs} selectedIndex={selectedIndex} />
+      <div className="bg-red w-full relative z-10">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
             {content.map((item: any, i: number) => {
