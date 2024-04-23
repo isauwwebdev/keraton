@@ -17,8 +17,8 @@ export default function FAQ() {
     <>
       <div className="bg-red mx-auto justify-center pb-8">
         <div className="md:px-32 px-8 pt-8">
-          <div className="bg-gradient-to-r from-orange-500 to-yellow text-white font-semibold rounded-lg p-1">
-            <span className="flex w-full bg-red text-orange-200 rounded p-3 font-sans text-center mx-auto justify-center text-2xl">
+          <div className="bg-gradient-to-r from-orange-500 to-yellow text-white font-semibold rounded-2xl p-1">
+            <span className="flex w-full bg-red text-orange-200 rounded-2xl p-3 font-sans text-center mx-auto justify-center text-2xl">
               FAQ
             </span>
           </div>
@@ -28,7 +28,7 @@ export default function FAQ() {
             placeholder={undefined}
             onPointerEnterCapture={undefined}
             onPointerLeaveCapture={undefined}
-            className="font-sans text-2xl"
+            style={{ backgroundColor: "transparent", outline: "none" }}
           >
             <AccordionHeader
               onClick={() => handleOpen(1)}
@@ -36,7 +36,7 @@ export default function FAQ() {
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
               className="font-sans font-extrabold text-2xl py-8"
-              style={{ outline: "none" }}
+              style={{ backgroundColor: "transparent", outline: "none" }}
               // Add other props as necessary
             >
               What time does Keraton start?
@@ -53,7 +53,7 @@ export default function FAQ() {
             placeholder={undefined}
             onPointerEnterCapture={undefined}
             onPointerLeaveCapture={undefined}
-            className="font-sans"
+            style={{ backgroundColor: "transparent", outline: "none" }}
           >
             <AccordionHeader
               onClick={() => handleOpen(2)}
@@ -61,6 +61,7 @@ export default function FAQ() {
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
               className="font-sans font-extrabold text-2xl py-8"
+              style={{ backgroundColor: "transparent", outline: "none" }}
 
               // Add other props as necessary
             >
@@ -86,6 +87,7 @@ export default function FAQ() {
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
               className="font-sans font-extrabold text-2xl py-8"
+              style={{ backgroundColor: "transparent", outline: "none" }}
 
               // Add other props as necessary
             >
@@ -111,6 +113,7 @@ export default function FAQ() {
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
               className="font-sans font-extrabold text-2xl py-8"
+              style={{ backgroundColor: "transparent", outline: "none" }}
 
               // Add other props as necessary
             >
@@ -136,6 +139,7 @@ export default function FAQ() {
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
               className="font-sans font-extrabold text-2xl py-8"
+              style={{ backgroundColor: "transparent", outline: "none" }}
 
               // Add other props as necessary
             >

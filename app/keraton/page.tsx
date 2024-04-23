@@ -11,9 +11,9 @@ export const KeratonContent = () => {
     <div className="div max-h-max">
       <About />
       <Performers />
-      <FAQ />
       {/* <Accordion /> */}
       <Vendors />
+      <FAQ />
       <Footer />
     </div>
   );
