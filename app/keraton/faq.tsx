@@ -15,7 +15,7 @@ export default function FAQ() {
 
   return (
     <>
-      <div className="bg-red mx-auto justify-center pb-8">
+      <div className="bg-red mx-auto justify-center pb-8 max-w-7xl">
         <div className="md:px-32 px-8 pt-8">
           <div className="bg-gradient-to-r from-orange-500 to-yellow text-white font-semibold rounded-2xl p-1">
             <span className="flex w-full bg-red text-orange-200 rounded-2xl p-3 font-sans text-center mx-auto justify-center text-2xl">
@@ -29,19 +29,20 @@ export default function FAQ() {
             onPointerEnterCapture={undefined}
             onPointerLeaveCapture={undefined}
             style={{ backgroundColor: "transparent", outline: "none" }}
+            className="mx-auto justify-center items-center font-sans"
           >
             <AccordionHeader
               onClick={() => handleOpen(1)}
               placeholder={undefined}
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
-              className="font-sans font-extrabold text-2xl py-8"
+              className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center"
               style={{ backgroundColor: "transparent", outline: "none" }}
               // Add other props as necessary
             >
               What time does Keraton start?
             </AccordionHeader>
-            <AccordionBody className="text-xl">
+            <AccordionBody className="text-xl font-sans">
               We&apos;re not always in the position that we want to be at.
               We&apos;re constantly growing. We&apos;re constantly making
               mistakes. We&apos;re constantly trying to express ourselves and
@@ -60,14 +61,14 @@ export default function FAQ() {
               placeholder={undefined}
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
-              className="font-sans font-extrabold text-2xl py-8"
+              className="font-sans font-extrabold text-2xl py-8 justify-center"
               style={{ backgroundColor: "transparent", outline: "none" }}
 
               // Add other props as necessary
             >
               Where can I find more information?
             </AccordionHeader>
-            <AccordionBody className="text-xl">
+            <AccordionBody className="text-xl font-sans">
               We&apos;re not always in the position that we want to be at.
               We&apos;re constantly growing. We&apos;re constantly making
               mistakes. We&apos;re constantly trying to express ourselves and
@@ -86,14 +87,14 @@ export default function FAQ() {
               placeholder={undefined}
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
-              className="font-sans font-extrabold text-2xl py-8"
+              className="font-sans font-extrabold text-2xl py-8 item-center mx-auto justify-center"
               style={{ backgroundColor: "transparent", outline: "none" }}
 
               // Add other props as necessary
             >
               How do I pay for food?
             </AccordionHeader>
-            <AccordionBody className="text-xl">
+            <AccordionBody className="text-xl font-sans">
               We&apos;re not always in the position that we want to be at.
               We&apos;re constantly growing. We&apos;re constantly making
               mistakes. We&apos;re constantly trying to express ourselves and
@@ -112,14 +113,14 @@ export default function FAQ() {
               placeholder={undefined}
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
-              className="font-sans font-extrabold text-2xl py-8"
+              className="font-sans font-extrabold text-2xl py-8 item-center mx-auto justify-center"
               style={{ backgroundColor: "transparent", outline: "none" }}
 
               // Add other props as necessary
             >
               Is there an admission fee?
             </AccordionHeader>
-            <AccordionBody className="text-xl">
+            <AccordionBody className="text-xl font-sans">
               We&apos;re not always in the position that we want to be at.
               We&apos;re constantly growing. We&apos;re constantly making
               mistakes. We&apos;re constantly trying to express ourselves and
@@ -138,14 +139,14 @@ export default function FAQ() {
               placeholder={undefined}
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
-              className="font-sans font-extrabold text-2xl py-8"
+              className="font-sans font-extrabold text-2xl py-8 item-center mx-auto justify-center"
               style={{ backgroundColor: "transparent", outline: "none" }}
 
               // Add other props as necessary
             >
               Where will Keraton be held?
             </AccordionHeader>
-            <AccordionBody>
+            <AccordionBody className="text-xl font-sans">
               We&apos;re not always in the position that we want to be at.
               We&apos;re constantly growing. We&apos;re constantly making
               mistakes. We&apos;re constantly trying to express ourselves and

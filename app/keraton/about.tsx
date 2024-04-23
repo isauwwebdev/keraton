@@ -51,7 +51,7 @@ export default function About() {
         width={1000}
         height={1000}
       />
-      <div className="bg-red pt-8">
+      <div className="bg-red pt-8 max-w-7xl justify-center mx-auto">
         <div className="content-center w-5/6 justify-center items-center mx-auto">
           <div className="bg-gradient-to-r from-orange-500 to-yellow text-white font-semibold rounded-lg p-1">
             <span className="flex w-full bg-red text-orange-200 rounded p-2 font-sans text-center mx-auto justify-center text-2xl">
