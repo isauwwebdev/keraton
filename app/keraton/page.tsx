@@ -8,7 +8,7 @@ import Footer from "./footer";
 export const KeratonContent = () => {
   // Your Keraton page content goes here
   return (
-    <div className="max-h-max max-w-full mx-auto bg-red">
+    <div className="max-h-max max-w-full mx-auto">
       <About />
       <Performers />
       {/* <Accordion /> */}

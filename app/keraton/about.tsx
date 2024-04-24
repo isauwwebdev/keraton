@@ -23,7 +23,7 @@ export default function About() {
       if (window.M) {
         const elems = document.querySelectorAll(".carousel");
         const options = {
-          shift: 150,
+          shift: 100,
           dist: -100,
           padding: 20,
           numVisible: 5,
@@ -41,7 +41,7 @@ export default function About() {
 
   return (
     <div
-      className="max-w-full justify-center mx-auto"
+      className="max-w-full justify-center mx-auto pb-12"
       style={{ margin: 0, padding: 0 }}
     >
       <Image
@@ -51,10 +51,15 @@ export default function About() {
         width={1000}
         height={1000}
       />
-      <div className="bg-red pt-8 max-w-7xl justify-center mx-auto">
-        <div className="content-center w-5/6 justify-center items-center mx-auto">
-          <div className="bg-gradient-to-r from-orange-500 to-yellow text-white font-semibold rounded-lg p-1">
-            <span className="flex w-full bg-red text-orange-200 rounded p-2 font-sans text-center mx-auto justify-center text-2xl">
+      <div className="bg-red pt-12 justify-center content-center mx-auto pb-2">
+        <div className="content-center w-5/6 justify-center my-auto mx-auto">
+          <div className="bg-gradient-to-r from-gold to-yellow text-white rounded-3xl p-1 h-24 align-middle justify-center content-center font-bold items-center">
+            {/* <span className="flex w-full bg-red text-orange-200 p-1 font-sans text-center mx-auto justify-center text-3xl h-full rounded-3xl items-center">
+              <h1 className="bg-gradient-to-r from-gold to-yellow text-transparent bg-clip-text bg-red text-3xl font-medium items-center">
+                ABOUT
+              </h1>
+            </span> */}
+            <span className="flex w-full bg-red text-orange-200 p-1 font-sans text-center mx-auto justify-center text-2xl h-full rounded-3xl items-center">
               ABOUT
             </span>
           </div>
@@ -67,7 +72,7 @@ export default function About() {
             boasts a stellar lineup of performers, featuring past stars like
             Jeremy Passion, Dhruv and most recently, Charlie Burg.
           </p>
-          <p className="text-center font-sans text-yellow m-8 text-xl font-semibold">
+          <p className="text-center font-sans text-yellow m-8 text-xl font-semibold pb-4">
             Immerse yourself in a culinary adventure with diverse Indonesian
             food trucks, and engage in traditional games that add an extra layer
             of excitement. Join us in celebrating the rich tapestry of
@@ -76,9 +81,9 @@ export default function About() {
           </p>
         </div>
 
-        {/* Start of White BG  */}
-        <div className="bg-yellow pt-2">
-          <h1 className="text-center text-red font-bold text-2xl">
+        {/* Start of White BG */}
+        <div className="bg-yellow mx-auto justify-center pt-8 pb-8">
+          <h1 className="text-center text-red font-bold text-3xl pt-8">
             BROUGHT TO YOU BY
           </h1>
           <div className="carousel">
@@ -86,8 +91,8 @@ export default function About() {
               <Image
                 src="/images/careerFair.png"
                 alt="Landing Image"
-                width={500}
-                height={500}
+                width={1000}
+                height={1000}
                 layout="responsive"
               />
             </a>
@@ -95,8 +100,8 @@ export default function About() {
               <Image
                 src="/images/keratonNEW.png"
                 alt="Landing Image"
-                width={500}
-                height={500}
+                width={1000}
+                height={1000}
                 layout="responsive"
               />
             </a>
@@ -104,8 +109,8 @@ export default function About() {
               <Image
                 src="/images/careerFair.png"
                 alt="Landing Image"
-                width={500}
-                height={500}
+                width={1000}
+                height={1000}
                 layout="responsive"
               />
             </a>
