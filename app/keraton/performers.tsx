@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function Performers() {
   return (
-    <div className="bg-red max-h-max">
+    <div className="bg-red max-h-max pt-8">
       <div className="content-center w-5/6 justify-center items-center mx-auto">
-        <div className="bg-gradient-to-r from-orange-500 to-yellow text-white font-semibold rounded-lg p-1 mt-20">
-          <span className="flex w-full bg-red text-orange-200 rounded p-2 font-sans text-center mx-auto justify-center text-2xl">
+        <div className="bg-gradient-to-r from-gold to-yellow text-white font-medium rounded-3xl p-1 h-24 align-middle justify-center content-center">
+          <span className="flex w-full bg-red text-orange-200 p-1 font-sans text-center mx-auto justify-center text-2xl h-full rounded-3xl items-center">
             OUR PERFORMERS
           </span>
         </div>

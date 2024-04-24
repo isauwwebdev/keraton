@@ -11,8 +11,9 @@ const config: Config = {
       colors: {
         yellow: "#FEFDEA",
         red: "#861501",
-        startBorder: "B58301",
-        endBorder: "FEFDEA"
+        gold: "#B58301",
+        goldBright: "#E5B128"
+
         // You can add more custom colors here
       },
       backgroundImage: {
