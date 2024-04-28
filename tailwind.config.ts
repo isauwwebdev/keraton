@@ -39,6 +39,9 @@ const config: Config = {
           '"Segoe UI Symbol"',
         ],
       },
+      aspectRatio: {
+        '7/3': '7 / 3',
+      },
     },
   },
   plugins: [],

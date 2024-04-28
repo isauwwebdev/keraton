@@ -4,7 +4,7 @@ type Props = {
   itemsLength: number;
   selectedIndex: number;
 };
-const Dots = ({ itemsLength, selectedIndex }: Props) => {
+export default function Dots({ itemsLength, selectedIndex }: Props) {
   const arr = new Array(itemsLength).fill(0);
   return (
     <div className="flex gap-1 my-2 justify-center -translate-y-5">
@@ -25,4 +25,3 @@ const Dots = ({ itemsLength, selectedIndex }: Props) => {
     </div>
   );
 };
-export default Dots;
