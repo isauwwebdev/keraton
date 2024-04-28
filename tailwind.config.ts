@@ -12,7 +12,7 @@ const config: Config = {
         yellow: "#FEFDEA",
         red: "#861501",
         gold: "#B58301",
-        goldBright: "#E5B128"
+        goldBright: "#E5B128",
 
         // You can add more custom colors here
       },
@@ -40,7 +40,8 @@ const config: Config = {
         ],
       },
       aspectRatio: {
-        '7/3': '7 / 3',
+        "7/3": "7 / 3",
+        "18/1": "18 / 1",
       },
     },
   },
