@@ -21,11 +21,17 @@ export default function FAQ() {
             open={open === 1}
             style={{ backgroundColor: "transparent", outline: "none" }}
             className="mx-auto justify-center items-center font-sans"
+            placeholder={null} // These don't do anything, just to remove the bug of death
+            onPointerEnterCapture={null}
+            onPointerLeaveCapture={null}
           >
             <AccordionHeader
               onClick={() => handleOpen(1)}
               className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
               style={{ backgroundColor: "transparent", outline: "none" }}
+              placeholder={null} // These don't do anything, just to remove the bug of death
+              onPointerEnterCapture={null}
+              onPointerLeaveCapture={null}
             >
               What time does Keraton start?
             </AccordionHeader>
@@ -37,11 +43,17 @@ export default function FAQ() {
           <Accordion
             open={open === 2}
             style={{ backgroundColor: "transparent", outline: "none" }}
+            placeholder={null} // These don't do anything, just to remove the bug of death
+            onPointerEnterCapture={null}
+            onPointerLeaveCapture={null}
           >
             <AccordionHeader
               onClick={() => handleOpen(2)}
               className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
               style={{ backgroundColor: "transparent", outline: "none" }}
+              placeholder={null} // These don't do anything, just to remove the bug of death
+              onPointerEnterCapture={null}
+              onPointerLeaveCapture={null}
             >
               Where can I find more information?
             </AccordionHeader>
@@ -55,11 +67,17 @@ export default function FAQ() {
             open={open === 3}
             style={{ backgroundColor: "transparent", outline: "none" }}
             className="font-sans"
+            placeholder={null} // These don't do anything, just to remove the bug of death
+            onPointerEnterCapture={null}
+            onPointerLeaveCapture={null}
           >
             <AccordionHeader
               onClick={() => handleOpen(3)}
               className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
               style={{ backgroundColor: "transparent", outline: "none" }}
+              placeholder={null} // These don't do anything, just to remove the bug of death
+              onPointerEnterCapture={null}
+              onPointerLeaveCapture={null}
             >
               How do I pay for food?
             </AccordionHeader>
@@ -74,11 +92,17 @@ export default function FAQ() {
             open={open === 4}
             style={{ backgroundColor: "transparent", outline: "none" }}
             className="font-sans"
+            placeholder={null} // These don't do anything, just to remove the bug of death
+            onPointerEnterCapture={null}
+            onPointerLeaveCapture={null}
           >
             <AccordionHeader
               onClick={() => handleOpen(4)}
               className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
               style={{ backgroundColor: "transparent", outline: "none" }}
+              placeholder={null} // These don't do anything, just to remove the bug of death
+              onPointerEnterCapture={null}
+              onPointerLeaveCapture={null}
             >
               Is there an admission fee?
             </AccordionHeader>
@@ -92,11 +116,17 @@ export default function FAQ() {
             open={open === 5}
             style={{ backgroundColor: "transparent", outline: "none" }}
             className="font-sans"
+            placeholder={null} // These don't do anything, just to remove the bug of death
+            onPointerEnterCapture={null}
+            onPointerLeaveCapture={null}
           >
             <AccordionHeader
               onClick={() => handleOpen(5)}
               className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
               style={{ backgroundColor: "transparent", outline: "none" }}
+              placeholder={null} // These don't do anything, just to remove the bug of death
+              onPointerEnterCapture={null}
+              onPointerLeaveCapture={null}
             >
               Where will Keraton be held?
             </AccordionHeader>
