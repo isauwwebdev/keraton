@@ -36,14 +36,17 @@ export default function FAQ() {
               placeholder={undefined}
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
-              className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
+              className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center"
               style={{ backgroundColor: "transparent", outline: "none" }}
               // Add other props as necessary
             >
               What time does Keraton start?
             </AccordionHeader>
             <AccordionBody className="text-xl font-sans">
-              Keraton will start at 4 pm and will approximately finish at 9 pm.
+              We&apos;re not always in the position that we want to be at.
+              We&apos;re constantly growing. We&apos;re constantly making
+              mistakes. We&apos;re constantly trying to express ourselves and
+              actualize our dreams.
             </AccordionBody>
           </Accordion>
           <Accordion
@@ -58,7 +61,7 @@ export default function FAQ() {
               placeholder={undefined}
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
-              className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
+              className="font-sans font-extrabold text-2xl py-8 justify-center"
               style={{ backgroundColor: "transparent", outline: "none" }}
 
               // Add other props as necessary
@@ -66,8 +69,10 @@ export default function FAQ() {
               Where can I find more information?
             </AccordionHeader>
             <AccordionBody className="text-xl font-sans">
-              You can find more details about Keraton on our Instagram account
-              @isauwhuskies
+              We&apos;re not always in the position that we want to be at.
+              We&apos;re constantly growing. We&apos;re constantly making
+              mistakes. We&apos;re constantly trying to express ourselves and
+              actualize our dreams.
             </AccordionBody>
           </Accordion>
           <Accordion
@@ -82,7 +87,7 @@ export default function FAQ() {
               placeholder={undefined}
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
-              className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
+              className="font-sans font-extrabold text-2xl py-8 item-center mx-auto justify-center"
               style={{ backgroundColor: "transparent", outline: "none" }}
 
               // Add other props as necessary
@@ -90,9 +95,10 @@ export default function FAQ() {
               How do I pay for food?
             </AccordionHeader>
             <AccordionBody className="text-xl font-sans">
-              Payments for food and drinks can be done through debit / credit
-              cards. Please keep in mind that all payments are completely
-              cashless.
+              We&apos;re not always in the position that we want to be at.
+              We&apos;re constantly growing. We&apos;re constantly making
+              mistakes. We&apos;re constantly trying to express ourselves and
+              actualize our dreams.
             </AccordionBody>
           </Accordion>
           <Accordion
@@ -107,7 +113,7 @@ export default function FAQ() {
               placeholder={undefined}
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
-              className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
+              className="font-sans font-extrabold text-2xl py-8 item-center mx-auto justify-center"
               style={{ backgroundColor: "transparent", outline: "none" }}
 
               // Add other props as necessary
@@ -115,8 +121,10 @@ export default function FAQ() {
               Is there an admission fee?
             </AccordionHeader>
             <AccordionBody className="text-xl font-sans">
-              No admission fee! So be sure to get all your friends and family to
-              come.
+              We&apos;re not always in the position that we want to be at.
+              We&apos;re constantly growing. We&apos;re constantly making
+              mistakes. We&apos;re constantly trying to express ourselves and
+              actualize our dreams.
             </AccordionBody>
           </Accordion>
           <Accordion
@@ -131,7 +139,7 @@ export default function FAQ() {
               placeholder={undefined}
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
-              className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
+              className="font-sans font-extrabold text-2xl py-8 item-center mx-auto justify-center"
               style={{ backgroundColor: "transparent", outline: "none" }}
 
               // Add other props as necessary
@@ -139,8 +147,10 @@ export default function FAQ() {
               Where will Keraton be held?
             </AccordionHeader>
             <AccordionBody className="text-xl font-sans">
-              Hub Lawn, University of Washington campus! 4001 E Stevens Way NE,
-              Seattle, WA 98195
+              We&apos;re not always in the position that we want to be at.
+              We&apos;re constantly growing. We&apos;re constantly making
+              mistakes. We&apos;re constantly trying to express ourselves and
+              actualize our dreams.
             </AccordionBody>
           </Accordion>
         </div>
