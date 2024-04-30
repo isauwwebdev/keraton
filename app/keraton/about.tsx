@@ -53,8 +53,8 @@ export default function About() {
         <div className="content-center w-5/6 lg:w-2/3 justify-center my-auto mx-auto pt-8 ">
           <KeratonHeader title={"ABOUT"} red={true} />
           <p className="text-center text-yellow m-8 text-xl font-semibold ">
-            Welcome to Keraton, the crown jewel of ISAUW's calendar and the most
-            anticipated Indonesian Festival on the West Coast!
+            Welcome to Keraton, the crown jewel of ISAUW&apos;s calendar and the
+            most anticipated Indonesian Festival on the West Coast!
           </p>
           <p className="text-center text-yellow m-8 text-xl font-semibold">
             Held annually at the University of Washington since 2011, Keraton

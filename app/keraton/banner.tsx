@@ -13,7 +13,7 @@ import { wrap } from "@motionone/utils";
 import { Icon } from "./icons";
 
 interface ParallaxProps {
-  children: string;
+  children: JSX.Element;
   baseVelocity: number;
 }
 
@@ -60,7 +60,7 @@ function ParallaxText({ children, baseVelocity = 10 }: ParallaxProps) {
 
 export default function Banner() {
   return (
-    <section className="relative]">
+    <section className="relative">
       <ParallaxText baseVelocity={-5}>
         <div className="flex flex-wrap justify-center">
           <div className="flex content-center mx-8 mt-2">

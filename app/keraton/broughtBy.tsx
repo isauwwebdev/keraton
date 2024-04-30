@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect } from "react";
+import { CarouselOptions } from "materialize-css";
 
 export default function BroughtBy() {
   useEffect(() => {
@@ -21,13 +22,15 @@ export default function BroughtBy() {
     // Initialize Materialize components like carousel when the script is loaded
     script.onload = () => {
       if (window.M) {
-        const elems = document.querySelectorAll(".carousel");
-        const options = {
+        let elems = document.querySelectorAll(".carousel");
+        if (elems == null) {
+          elems = {} as NodeListOf<Element>;
+        }
+        const options: Partial<CarouselOptions> = {
           shift: 150,
           dist: -100,
           padding: 20,
           numVisible: 4,
-          onCycleTo: null,
           duration: 200, // transition duration in milliseconds
         };
         const instances = window.M.Carousel.init(elems, options);
