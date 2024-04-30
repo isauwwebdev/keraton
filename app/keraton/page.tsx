@@ -4,6 +4,7 @@ import About from "./about";
 import Vendors from "./vendors";
 import Footer from "./footer";
 
+
 export const KeratonContent = () => {
   return (
     <div className="max-h-max max-w-full mx-auto">
