@@ -12,7 +12,6 @@ export const KeratonContent = () => {
     <div className="max-h-max max-w-full mx-auto">
       <About />
       <Banner />
-
       <Performers />
       {/* <Accordion /> */}
       <Vendors />
