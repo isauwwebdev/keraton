@@ -14,15 +14,13 @@ type Props = {
 };
 
 export default function Carousel({ right, content, imgs, desc }: Props) {
-  // 1. useEmblaCarousel returns a emblaRef and we must attach the ref to a container.
-  // EmblaCarousel will use that ref as basis for swipe and other functionality.
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
   });
 
   const [emblaRefImage, emblaApiImage] = useEmblaCarousel({
     loop: true,
-    watchDrag: false,
+    watchDrag: false, // Disable drag events
   });
 
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -54,9 +52,12 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
         className={
           "absolute top-[5%] z-20 w-1/3 " +
           (right ? "-right-[30%]" : "-left-[30%]")
-        }
+        } // Position based on content carousel
       >
-        <div className="overflow-hidden" ref={emblaRefImage}>
+        <div
+          className="overflow-hidden border-yellow border-4 lg:border-8 rounded-xl lg:rounded-3xl shadow-lg"
+          ref={emblaRefImage}
+        >
           <div className="flex">
             {imgs.map((item: any, i: number) => {
               return (
@@ -75,12 +76,17 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
       </div>
 
       {/* Vendor Content Carousel */}
-      <div className="h-full overflow-hidden rounded-[20px]" ref={emblaRef}>
+      <div
+        className="h-full overflow-hidden rounded-xl lg:rounded-3xl  shadow-2xl"
+        ref={emblaRef}
+      >
         <div className="flex h-full">
           {content.map((item: any, i: number) => {
             return (
               <div className="bg-red flex-[0_0_100%]" key={i}>
-                <h1 className="text-lg text-white">{item}</h1>
+                <div className="mx-auto text-center px-5 lg:px-20">
+                  <h1 className="text-xs lg:text-lg text-yellow">{item}</h1>
+                </div>
               </div>
             );
           })}

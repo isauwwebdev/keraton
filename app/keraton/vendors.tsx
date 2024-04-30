@@ -1,9 +1,14 @@
 "use client";
 
 import React, { useEffect } from "react";
-import VendorCarousel from "../components/carousel/VendorCarousel";
+import VendorCarousel from "./components/carousel/VendorCarousel";
+import KeratonHeader from "./components/KeratonHeader";
 
-const content: string[] = ["1", "2", "3"];
+const content: string[] = [
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+  "2",
+  "3",
+];
 
 const imgs: string[] = [
   "/images/keraton2.png",
@@ -13,36 +18,30 @@ const imgs: string[] = [
 
 export default function Vendors() {
   return (
-    <div className="bg-yellow py-10 lg:py-32">
-      <div className="mx-auto justify-center w-5/6 relative">
-        <div className="flex flex-col pt-8">
-          <div className="bg-gradient-to-r from-red to-goldBright text-white font-medium p-1 align-middle justify-center content-center aspect-18/1 rounded-lg lg:rounded-3xl">
-            <span className="flex w-full bg-yellow text-red from-red to-goldBright p-1 text-center mx-auto justify-center text-xl lg:text-4xl h-full rounded-lg lg:rounded-3xl items-center font-semibold text-3xl">
-              VENDORS
-            </span>
-          </div>
+    <div className="bg-yellow py-10 lg:py-18">
+      <div className="mx-auto justify-center w-5/6 lg:w-2/3">
+        <KeratonHeader title={"VENDORS"} red={false} />
 
-          <div className="w-full mx-auto py-10 lg:py-32">
-            <div className="flex flex-col justify-center gap-10 lg:gap-24">
-              <VendorCarousel
-                right={false}
-                content={content}
-                imgs={imgs}
-                desc={"FOODS"}
-              />
-              <VendorCarousel
-                right={true}
-                content={content}
-                imgs={imgs}
-                desc={"DRINKS"}
-              />
-              <VendorCarousel
-                right={false}
-                content={content}
-                imgs={imgs}
-                desc={"????"}
-              />
-            </div>
+        <div className="w-full mx-auto py-10 lg:py-20">
+          <div className="flex flex-col justify-center gap-10 lg:gap-24">
+            <VendorCarousel
+              right={false}
+              content={content}
+              imgs={imgs}
+              desc={"FOODS"}
+            />
+            <VendorCarousel
+              right={true}
+              content={content}
+              imgs={imgs}
+              desc={"DRINKS"}
+            />
+            <VendorCarousel
+              right={false}
+              content={content}
+              imgs={imgs}
+              desc={"????"}
+            />
           </div>
         </div>
       </div>

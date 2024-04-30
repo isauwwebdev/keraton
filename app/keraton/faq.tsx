@@ -1,12 +1,11 @@
 "use client";
 import React from "react";
-import type { AccordionProps } from "@material-tailwind/react";
 import {
   Accordion,
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
-// import "/app/overrides.css";
+import KeratonHeader from "./components/KeratonHeader";
 
 export default function FAQ() {
   const [open, setOpen] = React.useState(1);
@@ -15,30 +14,18 @@ export default function FAQ() {
 
   return (
     <>
-      <div className="bg-red mx-auto justify-center pb-8 max-w-7xl">
-        <div className="md:px-32 px-8 pt-8">
-          <div className="bg-gradient-to-r from-gold to-yellow text-white font-medium rounded-3xl p-1 h-24 align-middle justify-center content-center">
-            <span className="flex w-full bg-red text-orange-200 p-1 font-sans text-center mx-auto justify-center text-2xl h-full rounded-3xl items-center">
-              FAQ
-            </span>
-          </div>
-
+      <div className="bg-red pt-4 justify-center content-center mx-auto pb-2">
+        <div className="content-center w-5/6 lg:w-2/3 justify-center my-auto mx-auto pt-8">
+          <KeratonHeader title={"FAQ"} red={true} />
           <Accordion
             open={open === 1}
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
             style={{ backgroundColor: "transparent", outline: "none" }}
             className="mx-auto justify-center items-center font-sans"
           >
             <AccordionHeader
               onClick={() => handleOpen(1)}
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
               className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
               style={{ backgroundColor: "transparent", outline: "none" }}
-              // Add other props as necessary
             >
               What time does Keraton start?
             </AccordionHeader>
@@ -46,22 +33,15 @@ export default function FAQ() {
               Keraton will start at 4 pm and will approximately finish at 9 pm.
             </AccordionBody>
           </Accordion>
+          <hr className="my-4 border-yellow" /> {/* Divider */}
           <Accordion
             open={open === 2}
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
             style={{ backgroundColor: "transparent", outline: "none" }}
           >
             <AccordionHeader
               onClick={() => handleOpen(2)}
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
               className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
               style={{ backgroundColor: "transparent", outline: "none" }}
-
-              // Add other props as necessary
             >
               Where can I find more information?
             </AccordionHeader>
@@ -70,22 +50,16 @@ export default function FAQ() {
               @isauwhuskies
             </AccordionBody>
           </Accordion>
+          <hr className="my-4 border-yellow" /> {/* Divider */}
           <Accordion
             open={open === 3}
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            style={{ backgroundColor: "transparent", outline: "none" }}
             className="font-sans"
           >
             <AccordionHeader
               onClick={() => handleOpen(3)}
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
               className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
               style={{ backgroundColor: "transparent", outline: "none" }}
-
-              // Add other props as necessary
             >
               How do I pay for food?
             </AccordionHeader>
@@ -95,22 +69,16 @@ export default function FAQ() {
               cashless.
             </AccordionBody>
           </Accordion>
+          <hr className="my-4 border-yellow" /> {/* Divider */}
           <Accordion
             open={open === 4}
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            style={{ backgroundColor: "transparent", outline: "none" }}
             className="font-sans"
           >
             <AccordionHeader
               onClick={() => handleOpen(4)}
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
               className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
               style={{ backgroundColor: "transparent", outline: "none" }}
-
-              // Add other props as necessary
             >
               Is there an admission fee?
             </AccordionHeader>
@@ -119,22 +87,16 @@ export default function FAQ() {
               come.
             </AccordionBody>
           </Accordion>
+          <hr className="my-4 border-yellow" /> {/* Divider */}
           <Accordion
             open={open === 5}
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            style={{ backgroundColor: "transparent", outline: "none" }}
             className="font-sans"
           >
             <AccordionHeader
               onClick={() => handleOpen(5)}
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
               className="font-sans font-extrabold text-2xl py-8 mx-auto justify-center items-center sm:justify-normal"
               style={{ backgroundColor: "transparent", outline: "none" }}
-
-              // Add other props as necessary
             >
               Where will Keraton be held?
             </AccordionHeader>

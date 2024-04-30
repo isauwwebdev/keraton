@@ -1,85 +1,58 @@
-"use client";
-
-import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
+import KeratonHeader from "./components/KeratonHeader";
 
 export default function About() {
-  useEffect(() => {
-    // Load Materialize CSS
-    const link = document.createElement("link");
-    link.href =
-      "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
-    link.rel = "stylesheet";
-    document.head.appendChild(link);
-
-    // Load Materialize JavaScript
-    const script = document.createElement("script");
-    script.src =
-      "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Initialize Materialize components like carousel when the script is loaded
-    script.onload = () => {
-      if (window.M) {
-        const elems = document.querySelectorAll(".carousel");
-        const options = {
-          shift: 150,
-          dist: -100,
-          padding: 20,
-          numVisible: 4,
-          onCycleTo: null,
-          duration: 200, // transition duration in milliseconds
-        };
-        const instances = window.M.Carousel.init(elems, options);
-
-        // Setting up autoplay for the carousel
-        const autoplay = () => {
-          const interval = setInterval(() => {
-            instances.forEach((instance) => {
-              instance.next();
-            });
-          }, 3000); // moves to the next item every 3000 milliseconds
-          return interval;
-        };
-
-        const interval = autoplay();
-
-        // Cleanup to remove script, link, and clearInterval when component unmounts
-        return () => {
-          document.head.removeChild(link);
-          document.body.removeChild(script);
-          clearInterval(interval);
-        };
-      }
-    };
-  }, []);
-
   return (
-    <div
-      className="max-w-full justify-center mx-auto pb-12"
-      style={{ margin: 0, padding: 0 }}
-    >
-      <Image
-        src="/images/keraton2.png"
-        alt="Landing Image"
-        layout="responsive"
-        width={1000}
-        height={1000}
-      />
-      <div className="bg-red pt-12 justify-center content-center mx-auto pb-2">
-        <div className="content-center w-5/6 justify-center my-auto mx-auto">
-          <div className="bg-gradient-to-r from-gold to-yellow text-white rounded-3xl p-1 h-24 align-middle justify-center content-center font-bold items-center">
-            {/* <span className="flex w-full bg-red text-orange-200 p-1 text-center mx-auto justify-center text-3xl h-full rounded-3xl items-center">
-             <h1 className="bg-gradient-to-r from-gold to-yellow text-transparent bg-clip-text bg-red text-3xl font-medium items-center">
-               ABOUT
-             </h1>
-           </span> */}
-            <span className="flex w-full bg-red text-orange-200 p-1 text-center mx-auto justify-center text-2xl h-full rounded-3xl items-center">
-              ABOUT
-            </span>
-          </div>
-          <p className="text-center text-yellow m-8 text-xl font-semibold">
+    <div className="div">
+      {/* Parallax Container for Desktop Image */}
+      <div
+        className="hidden sm:block parallax-container"
+        style={{
+          backgroundImage: "url('/images/keraton2.png')",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "top center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+        }}
+      ></div>
+
+      {/* Parallax Container for Mobile Image */}
+      <div
+        className="sm:hidden parallax-container"
+        style={{
+          backgroundImage: "url('/images/KERATON_Mobile.png')",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "top center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+        }}
+      >
+        <div className="flex justify-center items-end h-[500px]">
+          <button className="text-orange-200 text-2xl font-bold animate-bounce flex items-center">
+            Learn More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="w-6 h-6 ml-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* About Section */}
+      <div className="bg-red pt-4 justify-center content-center mx-auto pb-2 animate-fade-up">
+        <div className="content-center w-5/6 lg:w-2/3 justify-center my-auto mx-auto pt-8 ">
+          <KeratonHeader title={"ABOUT"} red={true} />
+          <p className="text-center text-yellow m-8 text-xl font-semibold ">
             Welcome to Keraton, the crown jewel of ISAUW's calendar and the most
             anticipated Indonesian Festival on the West Coast!
           </p>

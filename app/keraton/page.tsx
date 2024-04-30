@@ -5,20 +5,23 @@ import Vendors from "./vendors";
 import Footer from "./footer";
 import Banner from "./banner";
 import BroughtBy from "./broughtBy";
+import Parallax from "./parallaxtest";
 // import Accordion from "./accordion";
 
 export const KeratonContent = () => {
   // Your Keraton page content goes here
   return (
-    <div className="max-h-max max-w-full mx-auto">
+    <div className="bg-red">
       <About />
-      <Banner />
+
       <BroughtBy />
       <Performers />
+      <Banner />
       {/* <Accordion /> */}
       <Vendors />
       <FAQ />
       <Footer />
+      <Parallax />
     </div>
   );
 };

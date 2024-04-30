@@ -56,3 +56,42 @@ body {
 html {
   font-family: var(--font-LeagueSpartan);
 }
+/* About.module.css */
+.parallax-outer {
+  overflow: hidden;
+  position: relative;
+  height: 500px; /* Adjust based on your design */
+}
+
+.parallax {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.parallax-layer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.about-page {
+  font-family: "Montserrat", sans-serif;
+  color: var(--secondaryColor);
+}
+
+.about-content {
+  padding: 2rem;
+  color: var(--secondaryColor);
+}
+
+/* Adjust the font sizes for responsiveness */
+@media (max-width: 768px) {
+  .about-content h2 {
+    font-size: 3rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+}
