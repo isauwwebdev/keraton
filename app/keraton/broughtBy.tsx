@@ -72,8 +72,8 @@ export default function BroughtBy() {
             <Image
               src="/images/1.png"
               alt="Landing Image"
-              width={5000}
-              height={5000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -81,8 +81,8 @@ export default function BroughtBy() {
             <Image
               src="/images/2.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -90,8 +90,8 @@ export default function BroughtBy() {
             <Image
               src="/images/3.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -99,8 +99,8 @@ export default function BroughtBy() {
             <Image
               src="/images/4.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -108,8 +108,8 @@ export default function BroughtBy() {
             <Image
               src="/images/5.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -117,8 +117,8 @@ export default function BroughtBy() {
             <Image
               src="/images/6.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -126,8 +126,8 @@ export default function BroughtBy() {
             <Image
               src="/images/7.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -135,8 +135,8 @@ export default function BroughtBy() {
             <Image
               src="/images/8.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>

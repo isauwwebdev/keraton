@@ -5,7 +5,7 @@ import Vendors from "./vendors";
 import Footer from "./footer";
 import Banner from "./banner";
 import BroughtBy from "./broughtBy";
-import Parallax from "./parallaxtest";
+import Countdown from "./countdown";
 // import Accordion from "./accordion";
 
 export const KeratonContent = () => {
@@ -21,7 +21,6 @@ export const KeratonContent = () => {
       <Vendors />
       <FAQ />
       <Footer />
-      <Parallax />
     </div>
   );
 };

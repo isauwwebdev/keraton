@@ -1,5 +1,6 @@
 import React from "react";
 import KeratonHeader from "./components/KeratonHeader";
+import Countdown from "./countdown";
 
 export default function About() {
   return (
@@ -8,7 +9,8 @@ export default function About() {
       <div
         className="hidden sm:block parallax-container"
         style={{
-          backgroundImage: "url('/images/keraton2.png')",
+          position: "relative", // Add position relative to the parent container
+          backgroundImage: "url('/images/keraton_banner_desktop.png')",
           backgroundAttachment: "fixed",
           backgroundPosition: "top center",
           backgroundRepeat: "no-repeat",
@@ -38,9 +40,9 @@ export default function About() {
               className="w-6 h-6 ml-2"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
               />
             </svg>
@@ -50,6 +52,10 @@ export default function About() {
 
       {/* About Section */}
       <div className="bg-red pt-4 justify-center content-center mx-auto pb-2 animate-fade-up">
+        <div className="mx-auto">
+          <Countdown />
+        </div>
+
         <div className="content-center w-5/6 lg:w-2/3 justify-center my-auto mx-auto pt-8 ">
           <KeratonHeader title={"ABOUT"} red={true} />
           <p className="text-center text-yellow m-8 text-xl font-semibold ">

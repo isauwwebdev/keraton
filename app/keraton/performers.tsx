@@ -5,11 +5,11 @@ import { Icon } from "./icons";
 
 export default function Performers() {
   return (
-    <div className="bg-red max-h-max pt-8">
+    <div className="bg-red max-h-max pt-12">
       <div className="content-center w-5/6 lg:w-2/3 justify-center items-center mx-auto">
         <KeratonHeader title={"OUR PERFORMERS"} red={true} />
-        <div className="content-center justify-center items-center mx-auto mt-10 flex gap-5">
-          <div className="flex flex-col text-center item-center w-40 lg:w-96 mx-auto flex-initial">
+        <div className="content-center justify-center items-center mx-auto  flex gap-5">
+          <div className="flex flex-col text-center item-center w-40 lg:w-96 mx-auto flex-initial hover:animate-wiggle ">
             <Image
               src="/images/lynlapid.png"
               width={32}
@@ -24,7 +24,7 @@ export default function Performers() {
               LYN LAPID
             </p>
           </div>
-          <div className="text-center item-center w-40 lg:w-96 mx-auto flex-initial">
+          <div className="text-center item-center w-40 lg:w-96 mx-auto flex-initial hover:animate-wiggle">
             <Image
               src="/images/emilysie.png"
               width={32}
