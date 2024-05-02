@@ -18,7 +18,7 @@ interface ParallaxProps {
 }
 
 // change velocity here
-function ParallaxText({ children, baseVelocity = 10 }: ParallaxProps) {
+function ParallaxText({ children, baseVelocity = 5 }: ParallaxProps) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -46,10 +46,10 @@ function ParallaxText({ children, baseVelocity = 10 }: ParallaxProps) {
   return (
     <div className="bg-red overflow-hidden whitespace-nowrap flex flex-nowrap">
       <motion.div
-        className="uppercase text-yellow font-bold text-5xl flex whitespace-nowrap"
+        className="uppercase text-orange-200 font-bold text-5xl flex whitespace-nowrap"
         style={{ x }}
       >
-        <span className="block mr-8">{children} </span>
+        <span className="block mr-8 text-orange-200">{children} </span>
         <span className="block mr-8">{children} </span>
         <span className="block mr-8">{children} </span>
         <span className="block mr-8">{children} </span>
@@ -61,11 +61,11 @@ function ParallaxText({ children, baseVelocity = 10 }: ParallaxProps) {
 export default function Banner() {
   return (
     <section className="relative">
-      <ParallaxText baseVelocity={-5}>
+      <ParallaxText baseVelocity={-2}>
         <div className="flex flex-wrap justify-center">
           <div className="flex content-center mx-8 mt-2">
             <div className="flex-1 mx-auto  my-auto content-center">
-              <h4 className="text-white font-bold text-center mx-auto">
+              <h4 className="text-orange-200 font-bold text-center mx-auto sm:text-4xl text-2xl ">
                 WEST OF EDEN
               </h4>
             </div>
@@ -73,31 +73,35 @@ export default function Banner() {
               <Icon />
             </div>
             <div className="flex-initial mx-4 my-auto">
-              <h4 className="text-white font-bold text-center w-auto">A2V</h4>
+              <h4 className="text-yellow font-bold text-center w-auto sm:text-4xl text-2xl">
+                A2V
+              </h4>
             </div>
             <div className="flex-initial mx-4 my-auto w-auto items-right">
               <Icon />
             </div>
             <div className="flex-1 mx-4 my-auto content-center">
-              <h4 className="text-white font-bold text-center mx-4">
+              <h4 className="text-orange-200 font-bold text-center mx-4 sm:text-4xl text-2xl">
                 VANESSA BELLA
               </h4>
             </div>
             <div className="flex-initial mx-4 my-auto items-center">
               <Icon />
             </div>
-            <div className="flex-initial mx-4 my-auto content-center">
-              <h4 className="text-white font-bold text-center">PERMIAS BAND</h4>
+            <div className="flex-initial mx-4 my-auto content-center sm:text-4xl text-2xl">
+              <h4 className="text-yellow font-bold text-center sm:text-4xl text-2xl">
+                PERMIAS BAND
+              </h4>
             </div>
           </div>
         </div>
       </ParallaxText>
-      <ParallaxText baseVelocity={5}>
+      <ParallaxText baseVelocity={-2}>
         <div className="flex flex-wrap justify-center">
           {/* second row performers */}
           <div className="flex content-center mx-8 mt-8 mb-10">
             <div className="flex-1 mx-auto">
-              <h4 className="text-center text-white font-bold my-auto mx-4">
+              <h4 className="text-center text-yellow font-bold my-auto mx-4 sm:text-4xl text-2xl">
                 SOPHOMORES
               </h4>
             </div>
@@ -105,7 +109,7 @@ export default function Banner() {
               <Icon />
             </div>
             <div className="flex-1 mx-4">
-              <h4 className="text-center text-white font-bold my-auto mx-4">
+              <h4 className="text-center text-orange-200 font-bold my-auto mx-4 sm:text-4xl text-2xl">
                 FAITH & JEREMY
               </h4>
             </div>
@@ -113,7 +117,7 @@ export default function Banner() {
               <Icon />
             </div>
             <div className="flex-1 mx-4">
-              <h4 className="text-center text-white font-bold my-auto mx-4">
+              <h4 className="text-center text-yellow font-bold my-auto mx-4 sm:text-4xl text-2xl">
                 AUDREY YIP
               </h4>
             </div>
