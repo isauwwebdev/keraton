@@ -27,7 +27,7 @@ export default function FAQ() {
           >
             <AccordionHeader
               onClick={() => handleOpen(1)}
-              className="font-sans font-extrabold text-2xl py-8  sm:justify-normal text-yellow"
+              className="font-sans font-extrabold text-2xl py-8   text-yellow"
               style={{ backgroundColor: "transparent", outline: "none" }}
               placeholder={null} // These don't do anything, just to remove the bug of death
               onPointerEnterCapture={null}
@@ -49,7 +49,7 @@ export default function FAQ() {
           >
             <AccordionHeader
               onClick={() => handleOpen(2)}
-              className="font-sans font-extrabold text-2xl py-8 mx-auto  text-yellow"
+              className="font-sans font-extrabold text-2xl py-8  text-start text-yellow"
               style={{ backgroundColor: "transparent", outline: "none" }}
               placeholder={null} // These don't do anything, just to remove the bug of death
               onPointerEnterCapture={null}
@@ -73,7 +73,7 @@ export default function FAQ() {
           >
             <AccordionHeader
               onClick={() => handleOpen(3)}
-              className="font-sans font-extrabold text-2xl py-8 mx-auto  text-yellow"
+              className="font-sans font-extrabold text-2xl py-8   text-yellow"
               style={{ backgroundColor: "transparent", outline: "none" }}
               placeholder={null} // These don't do anything, just to remove the bug of death
               onPointerEnterCapture={null}
@@ -98,7 +98,7 @@ export default function FAQ() {
           >
             <AccordionHeader
               onClick={() => handleOpen(4)}
-              className="font-sans font-extrabold text-2xl py-8 mx-auto  text-yellow"
+              className="font-sans font-extrabold text-2xl py-8  text-yellow"
               style={{ backgroundColor: "transparent", outline: "none" }}
               placeholder={null} // These don't do anything, just to remove the bug of death
               onPointerEnterCapture={null}
@@ -122,7 +122,7 @@ export default function FAQ() {
           >
             <AccordionHeader
               onClick={() => handleOpen(5)}
-              className="font-sans font-extrabold text-2xl py-8 mx-auto  text-yellow"
+              className="font-sans font-extrabold text-2xl py-8  text-yellow"
               style={{ backgroundColor: "transparent", outline: "none" }}
               placeholder={null} // These don't do anything, just to remove the bug of death
               onPointerEnterCapture={null}
