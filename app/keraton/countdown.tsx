@@ -19,8 +19,8 @@ export default function Countdown() {
       const targetDate = new Date("2024-05-18T16:00:00-07:00");
 
       // Calculate the difference in milliseconds
-      const differenceMs = targetDate - currentDate;
-
+      const differenceMs = targetDate.getTime() - currentDate.getTime();
+      
       // Convert milliseconds to days, hours, minutes, and seconds
       const days = Math.floor(differenceMs / (1000 * 60 * 60 * 24));
       const hours = Math.floor(

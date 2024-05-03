@@ -59,7 +59,9 @@ export default function FAQ() {
             </AccordionHeader>
             <AccordionBody className="text-xl font-sans text-yellow">
               You can find more details about Keraton on our Instagram account
-              @isauwhuskies
+              <a href="https://www.instagram.com/isauwhuskies/">
+                @isauwhuskies
+              </a>
             </AccordionBody>
           </Accordion>
           <hr className="my-4 border-yellow" /> {/* Divider */}

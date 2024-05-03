@@ -1,5 +1,6 @@
 "use client";
 
+import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -14,9 +15,12 @@ type Props = {
 };
 
 export default function Carousel({ right, content, imgs, desc }: Props) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
-  });
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      loop: true,
+    },
+    [Autoplay({ playOnInit: true, delay: 5000 })]
+  );
 
   const [emblaRefImage, emblaApiImage] = useEmblaCarousel({
     loop: true,
@@ -55,7 +59,7 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
         } // Position based on content carousel
       >
         <div
-          className="overflow-hidden border-yellow border-4 lg:border-8 rounded-xl lg:rounded-3xl shadow-lg"
+          className="overflow-hidden bg-yellow border-yellow border-4 lg:border-8 rounded-xl lg:rounded-3xl shadow-lg"
           ref={emblaRefImage}
         >
           <div className="flex">
@@ -85,7 +89,19 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
             return (
               <div className="bg-red flex-[0_0_100%]" key={i}>
                 <div className="mx-auto text-center px-5 lg:px-20">
-                  <h1 className="text-xs lg:text-lg text-yellow">{item}</h1>
+                  <h1 className="text-xs lg:text-lg text-yellow">
+                    {item.split("\n").map((line: string, index: number) => (
+                      <React.Fragment key={index}>
+                        {index === 0 ? (
+                          <span className="text-xl lg:text-3xl font-bold block mb-2 md:text-2xl">
+                            {line}
+                          </span>
+                        ) : (
+                          <span className="block">{line}</span>
+                        )}
+                      </React.Fragment>
+                    ))}
+                  </h1>
                 </div>
               </div>
             );
