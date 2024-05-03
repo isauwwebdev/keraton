@@ -48,7 +48,7 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
   return (
     <div
       className={
-        "relative w-3/4 aspect-[7/3] " + (right ? "self-start" : "self-end")
+        "relative w-3/4 aspect-auto " + (right ? "self-start" : "self-end")
       }
     >
       {/* Vendor Image */}
@@ -65,7 +65,10 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
           <div className="flex">
             {imgs.map((item: any, i: number) => {
               return (
-                <div key={i} className="relative flex-[0_0_100%] aspect-square">
+                <div
+                  key={i}
+                  className="relative flex flex-[0_0_100%] aspect-square w-full h-50 sm:h-50 md:h-62"
+                >
                   <Image src={item} alt="Landing Image" fill={true} />
                 </div>
               );
