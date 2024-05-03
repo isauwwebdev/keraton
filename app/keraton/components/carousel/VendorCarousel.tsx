@@ -67,7 +67,7 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
               return (
                 <div
                   key={i}
-                  className="relative flex flex-[0_0_100%] aspect-square w-full h-50 sm:h-50 md:h-62"
+                  className="relative flex flex-[0_0_100%] aspect-square w-full h-50 sm:h-50 md:h-60"
                 >
                   <Image src={item} alt="Landing Image" fill={true} />
                 </div>
