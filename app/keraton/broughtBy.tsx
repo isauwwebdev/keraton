@@ -2,8 +2,13 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import { CarouselOptions } from "materialize-css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function BroughtBy() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   useEffect(() => {
     // Load Materialize CSS
     const link = document.createElement("link");

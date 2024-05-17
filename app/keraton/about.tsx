@@ -1,8 +1,14 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import KeratonHeader from "./components/KeratonHeader";
 import Countdown from "./countdown";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function About() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="div">
       {/* Parallax Container for Desktop Image */}
@@ -15,7 +21,7 @@ export default function About() {
         <img
           src="/images/keraton_banner_desktop.png"
           alt="Keraton Banner"
-          className="object-contain w-full"
+          className="object-contain w-full aos-init aos-animate"
           style={{
             backgroundAttachment: "fixed",
             backgroundPosition: "top center",
@@ -23,6 +29,8 @@ export default function About() {
             backgroundSize: "contain",
             maxHeight: "500px",
           }}
+          data-aos="fade-up"
+          data-aos-duration="2000"
         />
       </div>
 
@@ -64,7 +72,11 @@ export default function About() {
           <Countdown />
         </div>
 
-        <div className="content-center w-5/6 lg:w-2/3 justify-center my-auto mx-auto pt-8 ">
+        <div
+          className="content-center w-5/6 lg:w-2/3 justify-center my-auto mx-auto pt-8"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <KeratonHeader title={"ABOUT"} red={true} />
           <p className="text-center text-yellow m-8 text-xl font-semibold ">
             Welcome to Keraton, the crown jewel of ISAUW&apos;s calendar and the
