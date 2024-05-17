@@ -38,8 +38,7 @@ body {
     font-style: normal;
     font-weight: 400; /* Adjust as needed based on the font weights you have */
     font-display: swap;
-    src:
-      url("/fonts/LeagueSpartan-Regular.woff2") format("woff2"),
+    src: url("/fonts/LeagueSpartan-Regular.woff2") format("woff2"),
       url("/fonts/LeagueSpartan-Regular.woff") format("woff");
   }
 
@@ -49,8 +48,7 @@ body {
     font-style: normal;
     font-weight: 700; /* Example for bold */
     font-display: swap;
-    src:
-      url("/fonts/LeagueSpartan-Bold.woff2") format("woff2"),
+    src: url("/fonts/LeagueSpartan-Bold.woff2") format("woff2"),
       url("/fonts/LeagueSpartan-Bold.woff") format("woff");
   }
 }
