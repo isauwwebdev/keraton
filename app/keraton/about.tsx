@@ -7,16 +7,24 @@ export default function About() {
     <div className="div">
       {/* Parallax Container for Desktop Image */}
       <div
-        className="hidden sm:block parallax-container"
+        className="hidden sm:block parallax-container object-fill"
         style={{
-          position: "relative", // Add position relative to the parent container
-          backgroundImage: "url('/images/keraton_banner_desktop.png')",
-          backgroundAttachment: "fixed",
-          backgroundPosition: "top center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "contain",
+          position: "relative",
         }}
-      ></div>
+      >
+        <img
+          src="/images/keraton_banner_desktop.png"
+          alt="Keraton Banner"
+          className="object-contain w-full"
+          style={{
+            backgroundAttachment: "fixed",
+            backgroundPosition: "top center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+            maxHeight: "500px",
+          }}
+        />
+      </div>
 
       {/* Parallax Container for Mobile Image */}
       <div
