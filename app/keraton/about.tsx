@@ -27,7 +27,7 @@ export default function About() {
             backgroundPosition: "top center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
-            maxHeight: "500px",
+            maxHeight: "600px",
           }}
           data-aos="fade-up"
           data-aos-duration="2000"
