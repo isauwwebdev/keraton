@@ -18,7 +18,7 @@ export default function Performers() {
     >
       <div className="content-center w-5/6 lg:w-2/3 justify-center items-center mx-auto">
         <KeratonHeader title={"OUR PERFORMERS"} red={true} />
-        <div className="content-center justify-center items-center mx-auto  flex gap-5">
+        <div className="content-center justify-center items-center mx-auto flex gap-5">
           <div
             className="flex flex-col text-center item-center w-40 lg:w-96 mx-auto flex-initial hover:animate-wiggle"
             data-aos="flip-right"
@@ -27,8 +27,8 @@ export default function Performers() {
             <Image
               className="pb-8"
               src="/images/rocco.png"
-              width={30}
-              height={30}
+              width={32}
+              height={32}
               layout="responsive"
               alt="LYN LAPID"
             />
