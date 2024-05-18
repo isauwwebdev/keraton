@@ -72,6 +72,7 @@ export default function BroughtBy() {
         <div className="bg-yellow mx-auto justify-center pb-8">
           <div className="sm:px-24 px-8 pt-12 sm:pt-32">
             <Image
+              className="animate-flip-down"
               src="/images/keraton_map.png"
               width={32}
               height={32}
