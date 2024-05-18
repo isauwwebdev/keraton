@@ -15,7 +15,7 @@ export const KeratonContent = () => {
         <title>Keraton 2024</title>
         <meta property="og:title" content="Keraton 2024" key="title" />
         <meta
-          name="description"
+          name="keraton"
           content="Keraton is the premier Indonesian Festival on the West Coast, and a highlight of ISAUW's annual calendar! Since its inception in 2011 at the University of Washington, Keraton has dazzled with an extraordinary lineup of performers like Jeremy Passion, Dhruv, and Charlie Burg.
 
           Experience the flavors of Indonesia with a variety of food trucks, and dive into traditional games that spice up the excitement. Celebrate the vibrant Indonesian culture with us, and create memories that last a lifetime. Don't miss this unforgettable cultural extravaganza!"
@@ -27,17 +27,14 @@ export const KeratonContent = () => {
           key="ogimage"
         />
       </Head>
-
       <About />
 
       <BroughtBy />
       <Performers />
       <Banner />
-      {/* <Accordion /> */}
       <Vendors />
       <FAQ />
       <Footer />
-      {/* <ParallaxPage /> */}
     </div>
   );
 };
