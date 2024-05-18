@@ -69,6 +69,17 @@ export default function BroughtBy() {
     >
       {/* Start of White BG */}
       <div className="bg-yellow mx-auto justify-center pb-8">
+        <div className="bg-yellow mx-auto justify-center pb-8">
+          <div className="sm:px-24 px-8 pt-12 sm:pt-32">
+            <Image
+              src="/images/keraton_map.png"
+              width={32}
+              height={32}
+              layout="responsive"
+              alt="keraton map"
+            />
+          </div>
+        </div>
         <h1 className="text-center text-red font-bold text-3xl pt-8">
           BROUGHT TO YOU BY
         </h1>
