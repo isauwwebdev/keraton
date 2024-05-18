@@ -27,6 +27,7 @@ const foodImg: string[] = [
   "/images/solarchapter.jpg",
   "/images/isauw.png",
   "/images/isauw.png",
+  "/images/raincafe.avif",
 ];
 
 const drinkImg: string[] = ["/images/coffeeholic.png", "/images/raincafe.avif"];
