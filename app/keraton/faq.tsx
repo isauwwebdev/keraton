@@ -20,14 +20,13 @@ export default function FAQ() {
           <Accordion
             open={open === 1}
             style={{ backgroundColor: "transparent", outline: "none" }}
-            className=" font-sans"
             placeholder={null} // These don't do anything, just to remove the bug of death
             onPointerEnterCapture={null}
             onPointerLeaveCapture={null}
           >
             <AccordionHeader
               onClick={() => handleOpen(1)}
-              className="font-sans font-extrabold text-2xl py-8  text-start  text-yellow"
+              className=" font-extrabold text-2xl py-8  text-start  text-yellow"
               style={{ backgroundColor: "transparent", outline: "none" }}
               placeholder={null} // These don't do anything, just to remove the bug of death
               onPointerEnterCapture={null}
@@ -35,7 +34,7 @@ export default function FAQ() {
             >
               What time does Keraton start?
             </AccordionHeader>
-            <AccordionBody className="text-xl font-sans text-yellow">
+            <AccordionBody className="text-xl  text-yellow">
               Keraton will start at 4 pm and will approximately finish at 9 pm.
             </AccordionBody>
           </Accordion>
@@ -49,7 +48,7 @@ export default function FAQ() {
           >
             <AccordionHeader
               onClick={() => handleOpen(2)}
-              className="font-sans font-extrabold text-2xl py-8  text-start text-yellow"
+              className=" font-extrabold text-2xl py-8  text-start text-yellow"
               style={{ backgroundColor: "transparent", outline: "none" }}
               placeholder={null} // These don't do anything, just to remove the bug of death
               onPointerEnterCapture={null}
@@ -57,7 +56,7 @@ export default function FAQ() {
             >
               Where can I find more information?
             </AccordionHeader>
-            <AccordionBody className="text-xl font-sans text-yellow">
+            <AccordionBody className="text-xl  text-yellow">
               You can find more details about Keraton on our Instagram account
               <a href="https://www.instagram.com/isauwhuskies/">
                 @isauwhuskies
@@ -68,14 +67,14 @@ export default function FAQ() {
           <Accordion
             open={open === 3}
             style={{ backgroundColor: "transparent", outline: "none" }}
-            className="font-sans text-yellow"
+            className=" text-yellow"
             placeholder={null} // These don't do anything, just to remove the bug of death
             onPointerEnterCapture={null}
             onPointerLeaveCapture={null}
           >
             <AccordionHeader
               onClick={() => handleOpen(3)}
-              className="font-sans font-extrabold text-2xl py-8   text-yellow"
+              className=" font-extrabold text-2xl py-8   text-yellow"
               style={{ backgroundColor: "transparent", outline: "none" }}
               placeholder={null} // These don't do anything, just to remove the bug of death
               onPointerEnterCapture={null}
@@ -83,7 +82,7 @@ export default function FAQ() {
             >
               How do I pay for food?
             </AccordionHeader>
-            <AccordionBody className="text-xl font-sans text-yellow">
+            <AccordionBody className="text-xl  text-yellow">
               Payments for food and drinks can be done through debit / credit
               cards. Please keep in mind that all payments are completely
               cashless.
@@ -93,14 +92,14 @@ export default function FAQ() {
           <Accordion
             open={open === 4}
             style={{ backgroundColor: "transparent", outline: "none" }}
-            className="font-sans text-yellow"
+            className=" text-yellow"
             placeholder={null} // These don't do anything, just to remove the bug of death
             onPointerEnterCapture={null}
             onPointerLeaveCapture={null}
           >
             <AccordionHeader
               onClick={() => handleOpen(4)}
-              className="font-sans font-extrabold text-2xl py-8  text-yellow"
+              className=" font-extrabold text-2xl py-8  text-yellow"
               style={{ backgroundColor: "transparent", outline: "none" }}
               placeholder={null} // These don't do anything, just to remove the bug of death
               onPointerEnterCapture={null}
@@ -108,7 +107,7 @@ export default function FAQ() {
             >
               Is there an admission fee?
             </AccordionHeader>
-            <AccordionBody className="text-xl font-sans text-yellow">
+            <AccordionBody className="text-xl  text-yellow">
               No admission fee! So be sure to get all your friends and family to
               come.
             </AccordionBody>
@@ -117,14 +116,14 @@ export default function FAQ() {
           <Accordion
             open={open === 5}
             style={{ backgroundColor: "transparent", outline: "none" }}
-            className="font-sans text-yellow"
+            className=" text-yellow"
             placeholder={null} // These don't do anything, just to remove the bug of death
             onPointerEnterCapture={null}
             onPointerLeaveCapture={null}
           >
             <AccordionHeader
               onClick={() => handleOpen(5)}
-              className="font-sans font-extrabold text-2xl py-8  text-yellow"
+              className=" font-extrabold text-2xl py-8  text-yellow"
               style={{ backgroundColor: "transparent", outline: "none" }}
               placeholder={null} // These don't do anything, just to remove the bug of death
               onPointerEnterCapture={null}
@@ -132,7 +131,7 @@ export default function FAQ() {
             >
               Where will Keraton be held?
             </AccordionHeader>
-            <AccordionBody className="text-xl font-sans text-yellow">
+            <AccordionBody className="text-xl  text-yellow">
               Hub Lawn, University of Washington campus! 4001 E Stevens Way NE,
               Seattle, WA 98195
             </AccordionBody>

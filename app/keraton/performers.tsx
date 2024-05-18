@@ -25,9 +25,10 @@ export default function Performers() {
             data-aos-duration="2000"
           >
             <Image
-              src="/images/lynlapid.png"
-              width={32}
-              height={32}
+              className="pb-8"
+              src="/images/rocco.png"
+              width={30}
+              height={30}
               layout="responsive"
               alt="LYN LAPID"
             />
@@ -35,7 +36,13 @@ export default function Performers() {
               className="text-3xl lg:text-8xl bg-gradient-to-r from-[#CBAA2F] to-white text-transparent 
                         bg-clip-text text-center font-bold  inline-block"
             >
-              LYN LAPID
+              ROCCO
+            </p>
+            <p
+              className="text-3xl lg:text-8xl text-transparent 
+                        bg-clip-text text-center font-bold lg:inline-block text-opacity-0 text-white hidden"
+            >
+              ROCCO
             </p>
           </div>
           <div
@@ -44,6 +51,7 @@ export default function Performers() {
             data-aos-duration="2000"
           >
             <Image
+              className="pb-8"
               src="/images/emilysie.png"
               width={32}
               height={32}

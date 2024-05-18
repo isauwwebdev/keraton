@@ -6,9 +6,10 @@ import KeratonHeader from "./components/KeratonHeader";
 
 const foods: string[] = [
   "Indo Cafe\nMenu:\nSate Ayam - $12\nExtra Rice - $2\nNasi Gila - $12\nPudding Lumut - $6\nGado Gado - $10\nEs Teler - $5",
-  "Solar Chapter\nMenu:\nMie Lidi \nMacaroni KurKure\nKuping Gajah\nKastangel \nPilus  \n Nabati \n Bawang Goreng",
-  "ISAUW Jasuke + Roti Bakar\nMenu:\nJasuke - $4\nRoti Bakar - $6",
+  "Solar Chapter\nMenu:\nMie Lidi - $3 \nMacaroni - $4 \nKuping Gajah - $4 \nPilus - $3 \nNabati - $3 \nBawang Goreng - $4",
+  "ISAUW Jasuke & Drinks \nMenu:\nJasuke - $4\nRoti Bakar - $6 \nMilo - $3 \nWater - $2.5",
   "ISAUW Indomie\nMenu:\nIndomie Single - $4\nIndomie Double - $6",
+  "Rain Cafe\nMenu:\nFried Tofu - $9 \nSalted Egg - $15",
 ];
 
 const drinks: string[] = [
@@ -17,10 +18,8 @@ const drinks: string[] = [
 ];
 
 const others: string[] = [
-  "Solar Chapter\nMerch",
-  "ISAUW Batik + Merch\nMerch:\nWhite Hoodie - $35\nGreen Hoodie - $35\nSticker per piece\nSticker pack",
-  "Artist Merch\nTBD",
-  "Photobooth",
+  "Solar Chapter\nShirts - $17\n Stickers (3pc) - $2",
+  "West of Eden\nT-Shirt - $45",
 ];
 
 const foodImg: string[] = [
@@ -34,9 +33,7 @@ const drinkImg: string[] = ["/images/coffeeholic.png", "/images/raincafe.avif"];
 
 const otherImg: string[] = [
   "/images/solarchapter.jpg",
-  "/images/isauw.png",
-  "",
-  "",
+  "/images/west-of-eden.jpg",
 ];
 
 export default function Vendors() {

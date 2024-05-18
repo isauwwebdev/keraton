@@ -70,9 +70,9 @@ export default function BroughtBy() {
       {/* Start of White BG */}
       <div className="bg-yellow mx-auto justify-center pb-8">
         <div className="bg-yellow mx-auto justify-center pb-8">
-          <div className="sm:px-24 px-8 pt-12 sm:pt-32">
+          <div className="sm:px-24 px-8 pt-12 sm:pt-32 lg:w-1/2 mx-auto">
             <Image
-              className="animate-flip-down"
+              className="animate-flip-down object-scale-down mx-auto "
               src="/images/keraton_map.png"
               width={32}
               height={32}

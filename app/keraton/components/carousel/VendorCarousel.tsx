@@ -87,11 +87,11 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
         className="h-full overflow-hidden rounded-xl lg:rounded-3xl  shadow-2xl"
         ref={emblaRef}
       >
-        <div className="flex h-full">
+        <div className="flex h-full min-h-24 lg:min-h-96">
           {content.map((item: any, i: number) => {
             return (
               <div className="bg-red flex-[0_0_100%]" key={i}>
-                <div className="mx-auto text-center px-5 lg:px-20">
+                <div className="text-center px-5 lg:px-20">
                   <h1 className="text-xs lg:text-lg text-yellow">
                     {item.split("\n").map((line: string, index: number) => (
                       <React.Fragment key={index}>

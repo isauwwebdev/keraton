@@ -8,6 +8,7 @@ export default function Countdown() {
     minutes: 0,
     seconds: 0,
   });
+  const [isHappeningNow, setIsHappeningNow] = useState(false);
 
   useEffect(() => {
     // Function to calculate countdown
@@ -20,7 +21,13 @@ export default function Countdown() {
 
       // Calculate the difference in milliseconds
       const differenceMs = targetDate.getTime() - currentDate.getTime();
-      
+
+      // If the difference is negative, set countdown to zero and mark as happening now
+      if (differenceMs <= 0) {
+        setIsHappeningNow(true);
+        return;
+      }
+
       // Convert milliseconds to days, hours, minutes, and seconds
       const days = Math.floor(differenceMs / (1000 * 60 * 60 * 24));
       const hours = Math.floor(
@@ -47,44 +54,55 @@ export default function Countdown() {
 
   return (
     <div className="py-10 lg:py-18 mx-auto">
-      <div className="grid grid-flow-col gap-5 text-center auto-cols-max mx-auto justify-center">
+      {isHappeningNow ? (
         <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content text-2xl text-yellow animate-pulse">
           <span
-            className="countdown sm:text-9xl text-4xl bg-gradient-to-r from-orange-300 to-white text-transparent 
-                        bg-clip-text font-semibold"
+            className="countdown sm:text-7xl text-4xl bg-gradient-to-r from-orange-300 to-white text-transparent 
+                        bg-clip-text font-semibold mx-auto"
           >
-            {countdown.days}
+            Happening Now
           </span>
-          days
         </div>
-        <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content text-2xl text-yellow animate-pulse">
-          <span
-            className="countdown  sm:text-9xl text-4xl bg-gradient-to-r from-orange-300 to-white text-transparent 
-                        bg-clip-text font-semibold"
-          >
-            {countdown.hours}
-          </span>
-          hours
+      ) : (
+        <div className="grid grid-flow-col gap-5 text-center auto-cols-max mx-auto justify-center">
+          <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content text-2xl text-yellow animate-pulse">
+            <span
+              className="countdown sm:text-9xl text-4xl bg-gradient-to-r from-orange-300 to-white text-transparent 
+                          bg-clip-text font-semibold"
+            >
+              {countdown.days}
+            </span>
+            days
+          </div>
+          <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content text-2xl text-yellow animate-pulse">
+            <span
+              className="countdown  sm:text-9xl text-4xl bg-gradient-to-r from-orange-300 to-white text-transparent 
+                          bg-clip-text font-semibold"
+            >
+              {countdown.hours}
+            </span>
+            hours
+          </div>
+          <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content text-2xl text-yellow animate-pulse">
+            <span
+              className="countdown sm:text-9xl text-4xl bg-gradient-to-r from-orange-300 to-white text-transparent 
+                          bg-clip-text font-semibold"
+            >
+              {countdown.minutes}
+            </span>
+            min
+          </div>
+          <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content text-2xl text-yellow animate-pulse">
+            <span
+              className="countdown sm:text-9xl text-4xl bg-gradient-to-r from-orange-300 to-white text-transparent 
+                          bg-clip-text font-semibold"
+            >
+              {countdown.seconds}
+            </span>
+            sec
+          </div>
         </div>
-        <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content text-2xl text-yellow animate-pulse">
-          <span
-            className="countdown sm:text-9xl text-4xl bg-gradient-to-r from-orange-300 to-white text-transparent 
-                        bg-clip-text font-semibold"
-          >
-            {countdown.minutes}
-          </span>
-          min
-        </div>
-        <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content text-2xl text-yellow animate-pulse">
-          <span
-            className="countdown sm:text-9xl text-4xl bg-gradient-to-r from-orange-300 to-white text-transparent 
-                        bg-clip-text font-semibold"
-          >
-            {countdown.seconds}
-          </span>
-          sec
-        </div>
-      </div>
+      )}
     </div>
   );
 }
