@@ -2,8 +2,13 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import { CarouselOptions } from "materialize-css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function BroughtBy() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   useEffect(() => {
     // Load Materialize CSS
     const link = document.createElement("link");
@@ -64,6 +69,18 @@ export default function BroughtBy() {
     >
       {/* Start of White BG */}
       <div className="bg-yellow mx-auto justify-center pb-8">
+        <div className="bg-yellow mx-auto justify-center pb-8">
+          <div className="sm:px-24 px-8 pt-12 sm:pt-32 lg:w-1/2 mx-auto">
+            <Image
+              className="animate-flip-down object-scale-down mx-auto "
+              src="/images/keraton_map.png"
+              width={32}
+              height={32}
+              layout="responsive"
+              alt="keraton map"
+            />
+          </div>
+        </div>
         <h1 className="text-center text-red font-bold text-3xl pt-8">
           BROUGHT TO YOU BY
         </h1>
@@ -72,8 +89,8 @@ export default function BroughtBy() {
             <Image
               src="/images/1.png"
               alt="Landing Image"
-              width={5000}
-              height={5000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -81,8 +98,8 @@ export default function BroughtBy() {
             <Image
               src="/images/2.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -90,8 +107,8 @@ export default function BroughtBy() {
             <Image
               src="/images/3.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -99,8 +116,8 @@ export default function BroughtBy() {
             <Image
               src="/images/4.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -108,8 +125,8 @@ export default function BroughtBy() {
             <Image
               src="/images/5.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -117,8 +134,8 @@ export default function BroughtBy() {
             <Image
               src="/images/6.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -126,8 +143,8 @@ export default function BroughtBy() {
             <Image
               src="/images/7.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>
@@ -135,8 +152,8 @@ export default function BroughtBy() {
             <Image
               src="/images/8.png"
               alt="Landing Image"
-              width={1000}
-              height={1000}
+              width={8000}
+              height={8000}
               layout="responsive"
             />
           </a>

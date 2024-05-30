@@ -15,7 +15,7 @@ export default function Dots({ itemsLength, selectedIndex }: Props) {
             className={classNames({
               "rounded-full transition-all duration-300 bg-white": true,
               // tune down the opacity if slide is not selected
-              "h-2 w-2 lg:h-4 lg:w-4 ": selected,
+              "h-1 w-1 lg:h-2 lg:w-2 ": selected,
               "opacity-50": !selected,
               "h-1 w-1 lg:h-2 lg:w-2": !selected,
             })}

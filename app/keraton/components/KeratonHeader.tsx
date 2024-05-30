@@ -11,7 +11,7 @@ export default function KeratonHeader({ title, red }: Props) {
           (red
             ? "bg-gradient-to-r from-gold to-yellow"
             : "bg-gradient-to-r from-red to-goldBright") +
-          " text-white font-medium p-1 align-middle justify-center content-center aspect-18/1 items-center rounded-full shadow-lg"
+          " text-white font-medium p-1 align-middle justify-center content-center aspect-auto items-center rounded-full shadow-lg"
         }
       >
         <div

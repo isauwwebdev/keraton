@@ -1,5 +1,6 @@
 "use client";
 
+import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -14,9 +15,12 @@ type Props = {
 };
 
 export default function Carousel({ right, content, imgs, desc }: Props) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
-  });
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      loop: true,
+    },
+    [Autoplay({ playOnInit: true, delay: 5000 })]
+  );
 
   const [emblaRefImage, emblaApiImage] = useEmblaCarousel({
     loop: true,
@@ -44,7 +48,7 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
   return (
     <div
       className={
-        "relative w-3/4 aspect-[7/3] " + (right ? "self-start" : "self-end")
+        "relative w-3/4 aspect-auto " + (right ? "self-start" : "self-end")
       }
     >
       {/* Vendor Image */}
@@ -55,13 +59,16 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
         } // Position based on content carousel
       >
         <div
-          className="overflow-hidden border-yellow border-4 lg:border-8 rounded-xl lg:rounded-3xl shadow-lg"
+          className="overflow-hidden bg-yellow border-yellow border-4 lg:border-8 rounded-xl lg:rounded-3xl shadow-lg"
           ref={emblaRefImage}
         >
           <div className="flex">
             {imgs.map((item: any, i: number) => {
               return (
-                <div key={i} className="relative flex-[0_0_100%] aspect-square">
+                <div
+                  key={i}
+                  className="relative flex flex-[0_0_100%] aspect-square w-full h-50 sm:h-50 md:h-60"
+                >
                   <Image src={item} alt="Landing Image" fill={true} />
                 </div>
               );
@@ -80,12 +87,24 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
         className="h-full overflow-hidden rounded-xl lg:rounded-3xl  shadow-2xl"
         ref={emblaRef}
       >
-        <div className="flex h-full">
+        <div className="flex h-full min-h-24 lg:min-h-96">
           {content.map((item: any, i: number) => {
             return (
               <div className="bg-red flex-[0_0_100%]" key={i}>
-                <div className="mx-auto text-center px-5 lg:px-20">
-                  <h1 className="text-xs lg:text-lg text-yellow">{item}</h1>
+                <div className="text-center px-5 lg:px-20">
+                  <h1 className="text-xs lg:text-lg text-yellow">
+                    {item.split("\n").map((line: string, index: number) => (
+                      <React.Fragment key={index}>
+                        {index === 0 ? (
+                          <span className="text-xl lg:text-3xl font-bold block mb-2 md:text-2xl">
+                            {line}
+                          </span>
+                        ) : (
+                          <span className="block">{line}</span>
+                        )}
+                      </React.Fragment>
+                    ))}
+                  </h1>
                 </div>
               </div>
             );

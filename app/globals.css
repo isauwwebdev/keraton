@@ -62,7 +62,7 @@ html {
   position: relative;
   height: 500px; /* Adjust based on your design */
 }
-
+/* 
 .parallax {
   height: 100%;
   width: 100%;
@@ -83,10 +83,10 @@ html {
 .about-content {
   padding: 2rem;
   color: var(--secondaryColor);
-}
+} */
 
 /* Adjust the font sizes for responsiveness */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .about-content h2 {
     font-size: 3rem;
   }
@@ -94,4 +94,4 @@ html {
   .about-content p {
     font-size: 1rem;
   }
-}
+} */

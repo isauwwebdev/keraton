@@ -1,20 +1,38 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import KeratonHeader from "./components/KeratonHeader";
+import Countdown from "./countdown";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function About() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="div">
       {/* Parallax Container for Desktop Image */}
       <div
-        className="hidden sm:block parallax-container"
+        className="hidden sm:block parallax-container object-fill"
         style={{
-          backgroundImage: "url('/images/keraton2.png')",
-          backgroundAttachment: "fixed",
-          backgroundPosition: "top center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "contain",
+          position: "relative",
         }}
-      ></div>
+      >
+        <img
+          src="/images/keraton_banner_desktop.png"
+          alt="Keraton Banner"
+          className="object-contain w-full aos-init aos-animate"
+          style={{
+            backgroundAttachment: "fixed",
+            backgroundPosition: "top center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+            maxHeight: "600px",
+          }}
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        />
+      </div>
 
       {/* Parallax Container for Mobile Image */}
       <div
@@ -38,9 +56,9 @@ export default function About() {
               className="w-6 h-6 ml-2"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
               />
             </svg>
@@ -50,7 +68,15 @@ export default function About() {
 
       {/* About Section */}
       <div className="bg-red pt-4 justify-center content-center mx-auto pb-2 animate-fade-up">
-        <div className="content-center w-5/6 lg:w-2/3 justify-center my-auto mx-auto pt-8 ">
+        <div className="mx-auto">
+          <Countdown />
+        </div>
+
+        <div
+          className="content-center w-5/6 lg:w-2/3 justify-center my-auto mx-auto pt-8"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <KeratonHeader title={"ABOUT"} red={true} />
           <p className="text-center text-yellow m-8 text-xl font-semibold ">
             Welcome to Keraton, the crown jewel of ISAUW&apos;s calendar and the

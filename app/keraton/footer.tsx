@@ -14,7 +14,7 @@ const navigation = [
   },
   {
     name: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/isauwhuskies/",
     icon: (props: any) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -49,7 +49,7 @@ const navigation = [
   },
   {
     name: "YouTube",
-    href: "#",
+    href: "https://youtube.com/@isauwhuskies?si=i72PdtPHgLXVQFP7",
     icon: (props: any) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -80,7 +80,8 @@ export default function footer() {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-gray-500">
-            &copy; 2020 Your Company, Inc. All rights reserved.
+            &copy; 2024 Indonesian Student Association, UW, Inc. All rights
+            reserved.
           </p>
         </div>
       </div>
