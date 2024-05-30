@@ -9,9 +9,12 @@ export default function About() {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  // TODO: Clean up vanilla css to tailwind
   return (
-    <div className="div">
+    <div>
       {/* Parallax Container for Desktop Image */}
+      {/* Note: Desktop with width larger than 1600px won't work*/}
       <div
         className="hidden sm:block parallax-container object-fill"
         style={{
@@ -27,7 +30,7 @@ export default function About() {
             backgroundPosition: "top center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
-            maxHeight: "600px",
+            maxHeight: "1000px",
           }}
           data-aos="fade-up"
           data-aos-duration="2000"
@@ -73,7 +76,7 @@ export default function About() {
         </div>
 
         <div
-          className="content-center w-5/6 lg:w-2/3 justify-center my-auto mx-auto pt-8"
+          className="content-center w-5/6 lg:w-2/3 justify-center my-auto mx-auto pt-8 pb-4"
           data-aos="fade-up"
           data-aos-duration="2000"
         >
@@ -87,7 +90,7 @@ export default function About() {
             boasts a stellar lineup of performers, featuring past stars like
             Jeremy Passion, Dhruv and most recently, Charlie Burg.
           </p>
-          <p className="text-center text-yellow m-8 text-xl font-semibold pb-4">
+          <p className="text-center text-yellow m-8 text-xl font-semibold">
             Immerse yourself in a culinary adventure with diverse Indonesian
             food trucks, and engage in traditional games that add an extra layer
             of excitement. Join us in celebrating the rich tapestry of

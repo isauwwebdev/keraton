@@ -2,12 +2,11 @@ import FAQ from "./faq";
 import Performers from "./performers";
 import About from "./about";
 import Vendors from "./vendors";
-import Footer from "./footer";
 import Banner from "./banner";
 import BroughtBy from "./broughtBy";
 import Head from "next/head";
 
-export const KeratonContent = () => {
+export default function KeratonContent() {
   // Your Keraton page content goes here
   return (
     <div className="bg-red">
@@ -34,11 +33,6 @@ export const KeratonContent = () => {
       <Banner />
       <Vendors />
       <FAQ />
-      <Footer />
     </div>
   );
-};
-
-// If you also need the default export to be a page by itself
-const Page = () => <KeratonContent />;
-export default KeratonContent;
+}
