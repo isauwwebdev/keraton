@@ -46,11 +46,7 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
   emblaApiImage?.scrollTo(selectedIndex);
   const length = content.length;
   return (
-    <div
-      className={
-        "relative w-3/4 aspect-auto " + (right ? "self-start" : "self-end")
-      }
-    >
+    <div className={"relative w-3/4 " + (right ? "self-start" : "self-end")}>
       {/* Vendor Image */}
       <div
         className={
@@ -62,13 +58,10 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
           className="overflow-hidden bg-yellow border-yellow border-4 lg:border-8 rounded-xl lg:rounded-3xl shadow-lg"
           ref={emblaRefImage}
         >
-          <div className="flex">
+          <div className="flex aspect-square">
             {imgs.map((item: any, i: number) => {
               return (
-                <div
-                  key={i}
-                  className="relative flex flex-[0_0_100%] aspect-square w-full h-50 sm:h-50 md:h-60"
-                >
+                <div key={i} className="relative flex flex-[0_0_100%]">
                   <Image src={item} alt="Landing Image" fill={true} />
                 </div>
               );
@@ -84,27 +77,35 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
 
       {/* Vendor Content Carousel */}
       <div
-        className="h-full overflow-hidden rounded-xl lg:rounded-3xl  shadow-2xl"
+        className="overflow-hidden rounded-xl lg:rounded-3xl shadow-2xl"
         ref={emblaRef}
       >
-        <div className="flex h-full min-h-24 lg:min-h-96">
+        {/* Aspect ratio might not work for some browser */}
+        <div className="flex aspect-[7/4]">
           {content.map((item: any, i: number) => {
             return (
-              <div className="bg-red flex-[0_0_100%]" key={i}>
-                <div className="text-center px-5 lg:px-20">
-                  <h1 className="text-xs lg:text-lg text-yellow">
+              <div className="bg-red flex-[0_0_100%] content-center" key={i}>
+                <div
+                  className={
+                    "flex " +
+                    (right
+                      ? "justify-start text-start"
+                      : "justify-end text-end")
+                  }
+                >
+                  <div className="text-yellow px-5 lg:px-20 py-2 lg:py-8">
                     {item.split("\n").map((line: string, index: number) => (
-                      <React.Fragment key={index}>
-                        {index === 0 ? (
-                          <span className="text-xl lg:text-3xl font-bold block mb-2 md:text-2xl">
-                            {line}
-                          </span>
-                        ) : (
-                          <span className="block">{line}</span>
-                        )}
-                      </React.Fragment>
+                      <p
+                        className={
+                          index === 0
+                            ? "text-xl md:text-2xl lg:text-3xl 2xl:text-7xl font-bold mb-2"
+                            : "text-[8px] lg:text-lg 2xl:text-4xl"
+                        }
+                      >
+                        {line}
+                      </p>
                     ))}
-                  </h1>
+                  </div>
                 </div>
               </div>
             );
