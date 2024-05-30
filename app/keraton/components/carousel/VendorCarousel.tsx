@@ -101,6 +101,7 @@ export default function Carousel({ right, content, imgs, desc }: Props) {
                             ? "text-xl md:text-2xl lg:text-3xl 2xl:text-7xl font-bold mb-2"
                             : "text-[8px] lg:text-lg 2xl:text-4xl"
                         }
+                        key={index}
                       >
                         {line}
                       </p>
