@@ -4,6 +4,7 @@ import KeratonHeader from "./components/KeratonHeader";
 import Countdown from "./countdown";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import MultiLayerParallax from "./components/MultiLayerParallax";
 
 export default function About() {
   useEffect(() => {
@@ -35,7 +36,7 @@ export default function About() {
       </div>
 
       {/* Parallax Container for Mobile Image */}
-      <div
+      {/* <div
         className="sm:hidden parallax-container"
         style={{
           backgroundImage: "url('/images/KERATON_Mobile.png')",
@@ -43,8 +44,7 @@ export default function About() {
           backgroundPosition: "top center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
-        }}
-      >
+        }}>
         <div className="flex justify-center items-end h-[500px]">
           <button className="text-orange-200 text-2xl font-bold animate-bounce flex items-center">
             Learn More
@@ -64,6 +64,9 @@ export default function About() {
             </svg>
           </button>
         </div>
+      </div> */}
+      <div className="sm:hidden">
+        <MultiLayerParallax />
       </div>
 
       {/* About Section */}
