@@ -5,6 +5,7 @@ import Countdown from "./countdown";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import MultiLayerParallax from "./components/MultiLayerParallax";
+import Image from "next/image";
 
 export default function About() {
   useEffect(() => {
@@ -30,8 +31,6 @@ export default function About() {
             backgroundSize: "contain",
             maxHeight: "600px",
           }}
-          data-aos="fade-up"
-          data-aos-duration="2000"
         />
       </div>
 
@@ -75,11 +74,7 @@ export default function About() {
           <Countdown />
         </div>
 
-        <div
-          className="content-center w-5/6 lg:w-2/3 justify-center my-auto mx-auto pt-8"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
+        <div className="content-center w-5/6 lg:w-2/3 justify-center my-auto mx-auto pt-8">
           <KeratonHeader title={"ABOUT"} red={true} />
           <p className="text-center text-yellow m-8 text-xl font-semibold ">
             Welcome to Keraton, the crown jewel of ISAUW&apos;s calendar and the

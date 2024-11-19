@@ -40,5 +40,5 @@ export const KeratonContent = () => {
 };
 
 // If you also need the default export to be a page by itself
-const Page = () => <KeratonContent />;
+// const Page = () => <KeratonContent />;
 export default KeratonContent;
