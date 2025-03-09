@@ -29,6 +29,16 @@ export default function Home() {
           key="ogimage"
         />
       </Head>
+    <div className="fixed top-[20px] left-[20px] z-[1000]">
+      <div className="p-[5px] bg-gradient-to-r from-gold to-yellow text-white no-underline rounded-full transition-all duration-300 ease-in-out">
+        <div className="pl-3 pr-3 bg-red text-orange-200 flex flex-col w-full text-center mx-auto justify-center text-xl lg:text-3xl h-full rounded-full font-semibold items-center transition-colors duration-500 ease-in-out hover:bg-red-500 hover:text-red">
+          <a href="https://isauw.org" className="no-underline text-goldBright text-[15px] transition-colors duration-500 ease-linear hover:text-white">
+            Back to ISAUW.org
+          </a>
+        </div>
+      </div>
+    </div>
+
       <KeratonContent />
     </main>
   );
