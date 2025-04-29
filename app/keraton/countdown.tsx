@@ -17,7 +17,7 @@ export default function Countdown() {
       const currentDate = new Date();
 
       // Set the target date (May 18th, 4:00 PM PDT)
-      const targetDate = new Date("2024-05-18T16:00:00-07:00");
+      const targetDate = new Date("2025-05-03T16:00:00-07:00");
 
       // Calculate the difference in milliseconds
       const differenceMs = targetDate.getTime() - currentDate.getTime();

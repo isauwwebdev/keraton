@@ -10,12 +10,14 @@ export default function MultiLayerParallax() {
 
   const topY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   const textY = useTransform(scrollYProgress, [0, 1], ["-125%", "150%"]);
+  const bottomY = useTransform(scrollYProgress, [0, 1], ["-50%", "200%"]); // Moves bottom layer more
 
   return (
     <div
       ref={ref}
-      className="w-full h-screen overflow-hidden relative grid place-items-center"
+      className="w-full h-[120vh] overflow-hidden relative grid place-items-center"
     >
+      {/* text part */}
       <motion.h1
         style={{ y: textY }}
         className="font-bold text-red text-8xl md:text-9xl relative z-30 text-center"
@@ -25,6 +27,7 @@ export default function MultiLayerParallax() {
         2025
       </motion.h1>
 
+      {/* text part */}
       <motion.div
         className="absolute inset-0 z-0"
         style={{
@@ -34,9 +37,9 @@ export default function MultiLayerParallax() {
           y: topY,
         }}
       />
-      {/* add test comments */}
+      {/* bottom part */}
       <motion.div
-        className="absolute inset-0 z-50"
+        className="absolute inset-0 z-50 mt-2"
         style={{
           backgroundImage: "url('/images/bottom-transparent.png')",
           backgroundPosition: "bottom",

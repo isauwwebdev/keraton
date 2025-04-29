@@ -66,7 +66,7 @@ export default function Banner() {
           <div className="flex content-center mx-8 mt-2">
             <div className="flex-1 mx-auto  my-auto content-center">
               <h4 className="text-orange-200 font-bold text-center mx-auto sm:text-4xl text-2xl ">
-                WEST OF EDEN
+                A2V
               </h4>
             </div>
             <div className="flex-initial mx-4 my-auto w-auto items-center">
@@ -74,7 +74,7 @@ export default function Banner() {
             </div>
             <div className="flex-initial mx-4 my-auto">
               <h4 className="text-yellow font-bold text-center w-auto sm:text-4xl text-2xl">
-                A2V
+                ANDIN
               </h4>
             </div>
             <div className="flex-initial mx-4 my-auto w-auto items-right">
@@ -82,7 +82,7 @@ export default function Banner() {
             </div>
             <div className="flex-1 mx-4 my-auto content-center">
               <h4 className="text-orange-200 font-bold text-center mx-4 sm:text-4xl text-2xl">
-                VANESSA BELLA
+                GEMA
               </h4>
             </div>
             <div className="flex-initial mx-4 my-auto items-center">
@@ -90,7 +90,7 @@ export default function Banner() {
             </div>
             <div className="flex-initial mx-4 my-auto content-center sm:text-4xl text-2xl">
               <h4 className="text-yellow font-bold text-center sm:text-4xl text-2xl">
-                PERMIAS BAND
+                JC
               </h4>
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function Banner() {
           <div className="flex content-center mx-8 mt-8 mb-10">
             <div className="flex-1 mx-auto">
               <h4 className="text-center text-yellow font-bold my-auto mx-4 sm:text-4xl text-2xl">
-                SOPHOMORES
+                MALIQ AND FRIENDS
               </h4>
             </div>
             <div className="flex-initial mx-4 my-auto w-auto items-right">
@@ -110,7 +110,7 @@ export default function Banner() {
             </div>
             <div className="flex-1 mx-4">
               <h4 className="text-center text-orange-200 font-bold my-auto mx-4 sm:text-4xl text-2xl">
-                FAITH & JEREMY
+                PRIZM
               </h4>
             </div>
             <div className="flex-initial mx-4 my-auto w-auto items-right">
@@ -118,8 +118,27 @@ export default function Banner() {
             </div>
             <div className="flex-1 mx-4">
               <h4 className="text-center text-yellow font-bold my-auto mx-4 sm:text-4xl text-2xl">
-                AUDREY YIP
+                VANESSA
               </h4>
+            </div>
+            <div className="flex-initial mx-4 my-auto w-auto items-right">
+              <Icon />
+            </div>
+            <div className="flex-1 mx-4">
+              <h4 className="text-center text-yellow font-bold my-auto mx-4 sm:text-4xl text-2xl">
+                THE MAHENDRAS
+              </h4>
+            </div>
+            <div className="flex-initial mx-4 my-auto w-auto items-right">
+              <Icon />
+            </div>
+            <div className="flex-1 mx-4">
+              <h4 className="text-center text-yellow font-bold my-auto mx-4 sm:text-4xl text-2xl">
+                WEST OF EDEN
+              </h4>
+            </div>
+            <div className="flex-initial mx-4 my-auto w-auto items-right">
+              <Icon />
             </div>
           </div>
         </div>

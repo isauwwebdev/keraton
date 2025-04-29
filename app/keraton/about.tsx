@@ -15,55 +15,27 @@ export default function About() {
     <div className="div">
       {/* Parallax Container for Desktop Image */}
       <div
-        className="hidden sm:block parallax-container object-fill"
+        className="hidden sm:block parallax-container" // Removed object-fill
         style={{
-          position: "relative",
+          top: 0, // Stick to the top
+          zIndex: 10, // Ensure it stays above other content when scrolling
+          width: "100%", // Ensure container takes full width
+          aspectRatio: "auto", // Adjust aspect ratio based on image, or set a specific one like '16/9' or '21/9' if needed
+          // You might need to set a specific height or aspect ratio here depending on the desired layout
+          // e.g., height: '500px' or aspectRatio: '21/9'
         }}
       >
-        <img
+        <Image
           src="/images/keraton_banner_desktop.png"
           alt="Keraton Banner"
-          className="object-contain w-full aos-init aos-animate"
-          style={{
-            backgroundAttachment: "fixed",
-            backgroundPosition: "top center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-            maxHeight: "600px",
-          }}
+          layout="fill" // Fill the container
+          objectFit="contain" // Maintain aspect ratio and fit within bounds
+          className="aos-init aos-animate" // Keep AOS animations if needed
+          priority // Add priority if it's LCP (Largest Contentful Paint)
         />
       </div>
 
       {/* Parallax Container for Mobile Image */}
-      {/* <div
-        className="sm:hidden parallax-container"
-        style={{
-          backgroundImage: "url('/images/KERATON_Mobile.png')",
-          backgroundAttachment: "fixed",
-          backgroundPosition: "top center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "contain",
-        }}>
-        <div className="flex justify-center items-end h-[500px]">
-          <button className="text-orange-200 text-2xl font-bold animate-bounce flex items-center">
-            Learn More
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="w-6 h-6 ml-2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-              />
-            </svg>
-          </button>
-        </div>
-      </div> */}
       <div className="sm:hidden">
         <MultiLayerParallax />
       </div>

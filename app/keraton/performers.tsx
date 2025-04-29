@@ -36,13 +36,13 @@ export default function Performers() {
               className="text-3xl lg:text-8xl bg-gradient-to-r from-[#CBAA2F] to-white text-transparent 
                         bg-clip-text text-center font-bold  inline-block"
             >
-              ROCCO
+              SUNKIS
             </p>
             <p
               className="text-3xl lg:text-8xl text-transparent 
                         bg-clip-text text-center font-bold lg:inline-block text-opacity-0 text-white hidden"
             >
-              ROCCO
+              SUNKIS
             </p>
           </div>
           <div
@@ -62,7 +62,7 @@ export default function Performers() {
               className="text-3xl lg:text-8xl bg-gradient-to-r from-[#CBAA2F] to-white text-transparent 
                         bg-clip-text text-center font-bold  inline-block"
             >
-              EMILY SIE
+              KEENAN TE
             </p>
           </div>
         </div>
