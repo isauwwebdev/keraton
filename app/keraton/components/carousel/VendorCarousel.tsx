@@ -54,6 +54,38 @@ export default function VendorCarousel({ right, vendors, desc }: Props) {
     };
   }, [emblaApi]);
 
+  interface MenuItemProps {
+    item: string;
+    price: number;
+    img: string;
+  }
+
+  const MenuItem: React.FC<MenuItemProps> = ({ item, price, img }) => {
+    return (
+      <div className="flex items-center text-xl md:text-xl mb-2 justify-stretch">
+        {img && (
+          <div
+            className="relative aspect-square w-10 mr-2 overflow-hidden rounded-lg border"
+            style={{ borderColor: "#FEFDEA" }}
+          >
+            {" "}
+            {/* Container for image size */}
+            <Image
+              src={img}
+              alt={item} // Use item name as alt text
+              fill={true}
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+        )}
+        {/* Item name and price */}
+        <p className="">
+          {item} - ${price.toFixed(2)}{" "}
+        </p>
+      </div>
+    );
+  };
+
   // Sync the image carousel with the content carousel's selected index
   useEffect(() => {
     if (emblaApiImage && emblaApi) {
@@ -105,7 +137,6 @@ export default function VendorCarousel({ right, vendors, desc }: Props) {
         </div>
       </div>
 
-      {/* Vendor Content Carousel (drives selection) */}
       <div
         className="h-full overflow-hidden rounded-xl lg:rounded-3xl shadow-2xl"
         ref={emblaRef}
@@ -120,14 +151,17 @@ export default function VendorCarousel({ right, vendors, desc }: Props) {
                   <h2 className="text-2xl lg:text-4xl font-bold block mb-2 md:text-2xl">
                     {vendor.name}
                   </h2>
-                  {/* Add the horizontal line here */}
                   <div className="w-full h-[2px] bg-[#e9d9cb] my-2 lg:my-4"></div>{" "}
-                  {/* Updated: full width, 2px height, removed mx-auto */}
-                  {vendor.menu.map((menuItem, itemIndex) => (
-                    <p key={itemIndex} className="block text-lg">
-                      {menuItem.item} - ${menuItem.price.toFixed(2)}{" "}
-                    </p>
-                  ))}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 px-6 lg:px-10 ml-12 pb-10 pt-4">
+                    {vendor.menu.map((menuItem, itemIndex) => (
+                      <MenuItem
+                        key={itemIndex}
+                        item={menuItem.item}
+                        price={menuItem.price}
+                        img={menuItem.img}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             );

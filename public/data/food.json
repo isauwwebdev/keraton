@@ -6,32 +6,32 @@
       {
         "item": "Sate Ayam",
         "price": 12,
-        "img": ""
+        "img": "/images/solarchapter.jpg"
       },
       {
         "item": "Extra Rice",
         "price": 2,
-        "img": ""
+        "img": "/images/solarchapter.jpg"
       },
       {
         "item": "Nasi Gila",
         "price": 12,
-        "img": ""
+        "img": "/images/solarchapter.jpg"
       },
       {
         "item": "Pudding Lumut",
         "price": 6,
-        "img": ""
+        "img": "/images/solarchapter.jpg"
       },
       {
         "item": "Gado Gado",
         "price": 10,
-        "img": ""
+        "img": "/images/solarchapter.jpg"
       },
       {
         "item": "Es Teler",
         "price": 5,
-        "img": ""
+        "img": "/images/solarchapter.jpg"
       }
     ]
   },
@@ -42,7 +42,7 @@
       {
         "item": "Mie Lidi",
         "price": 3,
-        "img": ""
+        "img": "/images/solarchapter.jpg"
       },
       {
         "item": "Macaroni",

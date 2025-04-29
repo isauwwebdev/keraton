@@ -6,32 +6,32 @@
       {
         "item": "Purple Haze",
         "price": 7,
-        "img": ""
+        "img": "/images/coffeeholic.png"
       },
       {
         "item": "Thai Green Tea",
         "price": 7,
-        "img": ""
+        "img": "/images/coffeeholic.png"
       },
       {
         "item": "Coffeeholic Dream",
         "price": 7,
-        "img": ""
+        "img": "/images/coffeeholic.png"
       },
       {
         "item": "Pandan Cold Foam Ca Phe Sua Da",
         "price": 7,
-        "img": ""
+        "img": "/images/coffeeholic.png"
       },
       {
         "item": "Dark Night",
         "price": 7,
-        "img": ""
+        "img": "/images/coffeeholic.png"
       },
       {
         "item": "Berry Galaxy Refresher",
         "price": 7,
-        "img": ""
+        "img": "/images/coffeeholic.png"
       }
     ]
   },
@@ -42,7 +42,7 @@
       {
         "item": "Tiger Milk Tea",
         "price": 7.50,
-        "img": ""
+        "img": "/images/coffeeholic.png"
       },
       {
         "item": "Rain Black Milk Tea",
