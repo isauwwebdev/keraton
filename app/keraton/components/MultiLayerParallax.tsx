@@ -9,8 +9,9 @@ export default function MultiLayerParallax() {
   });
 
   const topY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["-125%", "150%"]);
-  const bottomY = useTransform(scrollYProgress, [0, 1], ["-50%", "200%"]); // Moves bottom layer more
+  const textY = useTransform(scrollYProgress, [0, 1], ["-125%", "50%"]);
+  const keratonX = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]); // Move "Keraton" left
+  const yearX = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]); // Move "2025" right
 
   return (
     <div
@@ -20,11 +21,16 @@ export default function MultiLayerParallax() {
       {/* text part */}
       <motion.h1
         style={{ y: textY }}
-        className="font-bold text-red text-8xl md:text-9xl relative z-30 text-center"
+        className="font-bold text-red text-8xl md:text-9xl relative z-30 text-center flex flex-col items-center" // Added flex for alignment
       >
-        Keraton
-        <br />
-        2025
+        <motion.span style={{ x: keratonX, display: "inline-block" }}>
+          Keraton
+        </motion.span>{" "}
+        {/* Apply X transform */}
+        <motion.span style={{ x: yearX, display: "inline-block" }}>
+          2025
+        </motion.span>{" "}
+        {/* Apply X transform */}
       </motion.h1>
 
       {/* text part */}
