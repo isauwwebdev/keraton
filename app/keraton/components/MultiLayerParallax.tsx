@@ -22,7 +22,7 @@ export default function MultiLayerParallax() {
       >
         Keraton
         <br />
-        2024
+        2025
       </motion.h1>
 
       <motion.div
