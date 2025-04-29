@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Coffeeholic",
+    "img" : "/images/coffeeholic.png",
+    "menu": [
+      {
+        "item": "Purple Haze",
+        "price": 7,
+        "img": ""
+      },
+      {
+        "item": "Thai Green Tea",
+        "price": 7,
+        "img": ""
+      },
+      {
+        "item": "Coffeeholic Dream",
+        "price": 7,
+        "img": ""
+      },
+      {
+        "item": "Pandan Cold Foam Ca Phe Sua Da",
+        "price": 7,
+        "img": ""
+      },
+      {
+        "item": "Dark Night",
+        "price": 7,
+        "img": ""
+      },
+      {
+        "item": "Berry Galaxy Refresher",
+        "price": 7,
+        "img": ""
+      }
+    ]
+  },
+  {
+    "name": "Rain Cafe",
+    "img" : "/images/coffeeholic.png",
+    "menu": [
+      {
+        "item": "Tiger Milk Tea",
+        "price": 7.50,
+        "img": ""
+      },
+      {
+        "item": "Rain Black Milk Tea",
+        "price": 5.50,
+        "img": ""
+      },
+      {
+        "item": "Taro Milk Tea",
+        "price": 6,
+        "img": ""
+      },
+      {
+        "item": "Avocado Smoothie",
+        "price": 8.50,
+        "img": ""
+      }
+    ]
+  }
+]

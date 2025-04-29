@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Solar Chapter",
+    "img": "/images/solarchapter.jpg",
+    "menu": [
+      {
+        "item": "Shirts",
+        "price": 17,
+        "img": ""
+      },
+      {
+        "item": "Stickers (3pc)",
+        "price": 2,
+        "img": ""
+      }
+    ]
+  },
+  {
+    "name": "West of Eden",
+    "img": "/images/west-of-eden.jpg",
+    "menu": [
+      {
+        "item": "T-Shirt",
+        "price": 45,
+        "img": ""
+      }
+    ]
+  }
+]

@@ -72,15 +72,16 @@ export default function BroughtBy() {
         <div className="bg-yellow mx-auto justify-center pb-8">
           <div
             id="map"
-            className="sm:px-24 px-8 pt-12 sm:pt-32 lg:w-1/2 mx-auto"
+            className="sm:px-24 px-8 pt-12 sm:pt-32 lg:w-1/2 mx-auto relative" // Added relative positioning
           >
             <Image
-              className="animate-flip-down object-scale-down mx-auto "
-              src="/images/keraton_map.png"
+              className="animate-flip-down mx-auto" // Removed extra space
+              src="/images/keraton_vendors.gif"
+              alt="keraton map"
+              layout="responsive"
               width={32}
               height={32}
-              layout="responsive"
-              alt="keraton map"
+              // Removed width, height, and layout="responsive"
             />
           </div>
         </div>

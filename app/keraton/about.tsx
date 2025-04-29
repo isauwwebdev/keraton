@@ -14,17 +14,14 @@ export default function About() {
   return (
     <div className="div">
       {/* Parallax Container for Desktop Image */}
-      <div
-        className="hidden sm:block relative w-full h-[500px] overflow-hidden z-10"
-        style={{ backgroundColor: "#861501" }}
-      >
+      <div className="hidden sm:block relative w-full h-[60vh] overflow-hidden z-10">
         <Image
           src="/images/keraton_banner_desktop.png"
           alt="Keraton Banner"
           fill
           style={{
-            objectFit: "contain", // key difference: use contain
-            objectPosition: "top", // stay at top center
+            objectFit: "contain",
+            objectPosition: "top",
           }}
           priority
         />

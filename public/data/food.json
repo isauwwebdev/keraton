@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Indo Cafe",
+    "img": "/images/indocafe.png",
+    "menu": [
+      {
+        "item": "Sate Ayam",
+        "price": 12,
+        "img": ""
+      },
+      {
+        "item": "Extra Rice",
+        "price": 2,
+        "img": ""
+      },
+      {
+        "item": "Nasi Gila",
+        "price": 12,
+        "img": ""
+      },
+      {
+        "item": "Pudding Lumut",
+        "price": 6,
+        "img": ""
+      },
+      {
+        "item": "Gado Gado",
+        "price": 10,
+        "img": ""
+      },
+      {
+        "item": "Es Teler",
+        "price": 5,
+        "img": ""
+      }
+    ]
+  },
+  {
+    "name": "Solar Chapter",
+    "img": "/images/solarchapter.jpg",
+    "menu": [
+      {
+        "item": "Mie Lidi",
+        "price": 3,
+        "img": ""
+      },
+      {
+        "item": "Macaroni",
+        "price": 4,
+        "img": ""
+      },
+      {
+        "item": "Kuping Gajah",
+        "price": 4,
+        "img": ""
+      },
+      {
+        "item": "Pilus",
+        "price": 3,
+        "img": ""
+      },
+      {
+        "item": "Nabati",
+        "price": 3,
+        "img": ""
+      },
+      {
+        "item": "Bawang Goreng",
+        "price": 4,
+        "img": ""
+      }
+    ]
+  },
+  {
+    "name": "ISAUW Jasuke & Drinks",
+    "img": "/images/isauw.png",
+    "menu": [
+      {
+        "item": "Jasuke",
+        "price": 4,
+        "img": ""
+      },
+      {
+        "item": "Roti Bakar",
+        "price": 6,
+        "img": ""
+      },
+      {
+        "item": "Milo",
+        "price": 3,
+        "img": ""
+      },
+      {
+        "item": "Water",
+        "price": 2.5,
+        "img": ""
+      }
+    ]
+  },
+  {
+    "name": "ISAUW Indomie",
+    "img": "/images/isauw.png",
+    "menu": [
+      {
+        "item": "Indomie Single",
+        "price": 4,
+        "img": ""
+      },
+      {
+        "item": "Indomie Double",
+        "price": 6,
+        "img": ""
+      }
+    ]
+  },
+  {
+    "name": "Rain Cafe",
+    "img": "/images/raincafe.avif",
+    "menu": [
+      {
+        "item": "Fried Tofu",
+        "price": 9,
+        "img": ""
+      },
+      {
+        "item": "Salted Egg",
+        "price": 15,
+        "img": ""
+      }
+    ]
+  }
+]
