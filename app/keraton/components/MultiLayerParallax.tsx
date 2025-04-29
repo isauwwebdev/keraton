@@ -12,6 +12,16 @@ export default function MultiLayerParallax() {
   const textY = useTransform(scrollYProgress, [0, 1], ["-125%", "50%"]);
   const keratonX = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]); // Move "Keraton" left
   const yearX = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]); // Move "2025" right
+  const keratonColor = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    ["#861501", "#E5B128", "#FFFFFF"]
+  );
+  const yearColor = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    ["#861501", "#E5B128", "#FFFFFF"]
+  );
 
   return (
     <div
@@ -23,13 +33,17 @@ export default function MultiLayerParallax() {
         style={{ y: textY }}
         className="font-bold text-red text-8xl md:text-9xl relative z-30 text-center flex flex-col items-center" // Added flex for alignment
       >
-        <motion.span style={{ x: keratonX, display: "inline-block" }}>
+        <motion.span
+          style={{ x: keratonX, color: keratonColor, display: "inline-block" }}
+        >
           Keraton
-        </motion.span>{" "}
+        </motion.span>
         {/* Apply X transform */}
-        <motion.span style={{ x: yearX, display: "inline-block" }}>
+        <motion.span
+          style={{ x: yearX, color: yearColor, display: "inline-block" }}
+        >
           2025
-        </motion.span>{" "}
+        </motion.span>
         {/* Apply X transform */}
       </motion.h1>
 

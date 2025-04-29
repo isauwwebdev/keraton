@@ -12,7 +12,7 @@ export const KeratonContent = () => {
   return (
     <div className="bg-red">
       <Head>
-        <title>Keraton 2024</title>
+        <title>Keraton 2025</title>
         <meta property="og:title" content="Keraton 2024" key="title" />
         <meta
           name="keraton"

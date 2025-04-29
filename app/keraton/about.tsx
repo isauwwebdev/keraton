@@ -15,23 +15,18 @@ export default function About() {
     <div className="div">
       {/* Parallax Container for Desktop Image */}
       <div
-        className="hidden sm:block parallax-container" // Removed object-fill
-        style={{
-          top: 0, // Stick to the top
-          zIndex: 10, // Ensure it stays above other content when scrolling
-          width: "100%", // Ensure container takes full width
-          aspectRatio: "auto", // Adjust aspect ratio based on image, or set a specific one like '16/9' or '21/9' if needed
-          // You might need to set a specific height or aspect ratio here depending on the desired layout
-          // e.g., height: '500px' or aspectRatio: '21/9'
-        }}
+        className="hidden sm:block relative w-full h-[500px] overflow-hidden z-10"
+        style={{ backgroundColor: "#861501" }}
       >
         <Image
           src="/images/keraton_banner_desktop.png"
           alt="Keraton Banner"
-          layout="fill" // Fill the container
-          objectFit="contain" // Maintain aspect ratio and fit within bounds
-          className="aos-init aos-animate" // Keep AOS animations if needed
-          priority // Add priority if it's LCP (Largest Contentful Paint)
+          fill
+          style={{
+            objectFit: "contain", // key difference: use contain
+            objectPosition: "top", // stay at top center
+          }}
+          priority
         />
       </div>
 

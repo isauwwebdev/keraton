@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="max-h-max max-w-full mx-auto ">
       <Head>
-        <title>Keraton 2024</title>
+        <title>Keraton 2025</title>
         <meta property="og:title" content="Keraton 2024" key="title" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta
