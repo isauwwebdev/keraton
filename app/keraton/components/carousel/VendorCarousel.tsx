@@ -152,7 +152,7 @@ export default function VendorCarousel({ right, vendors, desc }: Props) {
                     {vendor.name}
                   </h2>
                   <div className="w-full h-[2px] bg-[#e9d9cb] my-2 lg:my-4"></div>{" "}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 px-6 lg:px-10 ml-12 pb-10 pt-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 px-6 lg:px-10 md:ml-12 pb-10 pt-4">
                     {vendor.menu.map((menuItem, itemIndex) => (
                       <MenuItem
                         key={itemIndex}
